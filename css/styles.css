@@ -1,0 +1,17 @@
+h2 > a:link {
+  color: black;
+  text-decoration: none;
+}
+
+h2 > a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+h2 > a:hover {
+  color: greenyellow;
+}
+
+h2 > a:active {
+  text-decoration: none;
+}
