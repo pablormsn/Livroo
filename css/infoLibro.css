@@ -1,20 +1,20 @@
 @import "styles.css";
 
-h2 > a:link {
+.link:link {
   color: white;
   text-decoration: none;
 }
 
-h2 > a:visited {
+.link:visited {
   color: white;
   text-decoration: none;
 }
 
-h2 > a:hover {
+.link:hover {
   color: greenyellow;
 }
 
-h2 > a:active {
+.link:active {
   text-decoration: none;
 }
 
