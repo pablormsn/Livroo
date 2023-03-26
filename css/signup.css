@@ -8,6 +8,9 @@ body {
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
+  background-image: url("../images/register_login.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .form-signin {
@@ -20,22 +23,22 @@ body {
 }
 
 .form-signin input[type="email"] {
-  margin-top: -10px;
+  margin-top: -1px;
   margin-bottom: -1px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.form-signin input[type="password"] {
-  margin-bottom: -1px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.form-signin input[type="rpassword"] {
+.form-signin #floatingRPassword {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+.form-signin #floatingPassword{
+  margin-bottom: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
