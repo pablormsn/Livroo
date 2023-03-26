@@ -5,7 +5,6 @@
  * Globals
  */
 
-
 /* Custom default button */
 .btn-secondary,
 .btn-secondary:hover,
@@ -14,12 +13,11 @@
   text-shadow: none; /* Prevent inheritance from `body` */
 }
 
-
 /*
  * Base structure
  */
 
- body {
+body {
   text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
   box-shadow: inset 0 0 0 5000000px rgba(0, 0, 0, 0.8);
   background-image: url("../images/busqueda.jpg");
@@ -30,60 +28,60 @@
   padding: 0;
 }
 
-footer
-{
-    margin-top : auto;
-    width:100%;
+footer {
+  margin-top: auto;
+  width: 100%;
 }
-main
-{
-    margin-top:50px;
+main {
+  margin-top: 50px;
 }
 
-input.form-control.me-3{
+input.form-control.me-3 {
   width: 50%;
 }
 
-div.album{
-  margin-top:6rem;
+div.album {
+  margin-top: 6rem;
 }
 
-div.card{
-  background-color:transparent;
+div.card {
+  background-color: transparent;
   border-color: transparent;
 }
 
-div.card-body.d-flex.align-items-center{
+div.card-body.d-flex.align-items-center {
   padding: 0;
 }
 
-div.dropdown{
+div.dropdown {
   position: relative;
 }
 
-a.btn.btn-outline-success{
+a.btn.btn-outline-success {
   margin-left: 10px;
 }
 
-a.nav-link.dropdown-toggle{color: rgba(255, 255, 255, .5);}
+a.nav-link.dropdown-toggle {
+  color: rgba(255, 255, 255, 0.5);
+}
 
 .cover-container {
   max-width: 42em;
 }
 
-button#button-addon1.btn.me-2{
+button#button-addon1.btn.me-2 {
   font-size: 30px;
 }
 
-.divider{
+.divider {
   margin-top: 1rem;
 }
 
-.suzane{
+.suzane {
   width: 25%;
   height: 25%;
 }
 
-.cubo{
+.cubo {
   margin-bottom: auto;
 }
