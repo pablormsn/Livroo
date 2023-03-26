@@ -10,14 +10,12 @@
 
 - [ ] Información del libro - Ale
 
-- [ ] Libro 
+- [ ] Libro
 
 - [ ] Buscador - David
 
 - [ ] Perfil
 
-- [ ] Taller
-
-- [ ] Página de libros propios
-
 - [ ] Biografía del autor
+
+-123
