@@ -1,8 +1,0 @@
-@import "styles.css";
-@import "signup.css";
-
-.form-signin input[type="passwordl"] {
-    margin-bottom: 11px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-  }

@@ -8,6 +8,9 @@ body {
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
+  background-image: url("../images/register_login.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .form-signin {
