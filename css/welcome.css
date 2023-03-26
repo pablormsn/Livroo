@@ -1,7 +1,8 @@
 @import "styles.css";
+@import "navbar.css";
 
 body {
-  color: #5a5a5a;
+  color: #fff;
 }
 
 .carousel {
@@ -41,4 +42,12 @@ body {
 
 .zoom:hover {
   transform: scale(1.1);
+}
+
+.card {
+  background: #000;
+}
+
+.row {
+  margin-bottom: 1.5rem;
 }
