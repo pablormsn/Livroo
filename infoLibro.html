@@ -10,73 +10,129 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/infoLibro.css" />
-    <link rel="icon" type="image/x-icon" href="/images/favicon/favicon-32x32.png">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="images/favicon/favicon-32x32.png"
+    />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" aria-current="page" href="#">
+    <header class="">
+      <div>
+        <h3 class="float-md-start mb-0">
           <img
             src="images/Livroo.png"
             alt="Logo not found"
-            width="50"
-            height="24"
+            width="100"
+            height="48"
           />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="busqueda.html">Buscar</a>
+        </h3>
+        <nav id="imgperfil" class="nav justify-content-center float-md-end">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img src="images/user.png" style="width: 45px; height: 45px" />
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li>
+              <a class="dropdown-item" href="miCuenta.html">Mi cuenta</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Taller</a>
+            <li>
+              <hr class="dropdown-divider" />
             </li>
-            <li class="nav-item dropdown position-absolute bottom-0 end-0">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <img src="images/user.png" style="width: 45px; height: 45px" />
-              </a>
-              <ul class="dropdown-menu dropdown-menu-end">
-                <li>
-                  <a class="dropdown-item" href="miCuenta.html">Mi cuenta</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="index.html">Cerrar sesión</a>
-                </li>
-              </ul>
+            <li>
+              <a class="dropdown-item" href="home.html">Cerrar sesión</a>
             </li>
           </ul>
-        </div>
+        </nav>
+
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+          <a
+            class="nav-link fw-bold py-1 px-0 active align-self-center"
+            aria-current="page"
+            href="busqueda.html"
+            >Buscar</a
+          >
+          <a class="nav-link fw-bold py-1 px-0 align-self-center" href="#"
+            >Taller</a
+          >
+        </nav>
       </div>
-    </nav>
+    </header>
+
     <div class="container mx-5 my-3">
-      <p style="font-size: large; color:white">
+      <p style="font-size: large; color: white">
         <a class="link" href="welcome.html">Libros</a> > Los Juegos Del Hambre
       </p>
     </div>
     <div class="mx-5 my-3" style="height: 500px">
       <img class="me-3" src="images/portada.jpg" style="float: left" />
-      <h1 style="color:white">Los Juegos del Hambre</h1>
-      <h2><a class="link" href="biography.html" target="_blank">Suzanne Collins</a></h2>
-      <h3 style="color:white">Sinopsis:</h3>
-      <p style="color:white">
+      <h1 style="color: white">Los Juegos del Hambre</h1>
+      <h2>
+        <a class="link" href="biography.html" target="_blank"
+          >Suzanne Collins</a
+        >
+      </h2>
+      <h3 style="color: white">Sinopsis:</h3>
+      <p style="color: white">
         "En una oscura versión del futuro próximo, doce chicos y doce chicas se
         ven obligados a participar en un reality show llamado Los Juegos del
         Hambre. Sólo hay una regla: matar o morir" "Cuando Katniss Everdeen, una
@@ -90,34 +146,45 @@
       <button
         class="btn btn-primary"
         style="width: 353px; height: 70px; font-size: 30px; font-weight: bold"
-        type="button" 
-        data-bs-toggle="modal" data-bs-target="#exampleModal"
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
       >
         LEER ESTE LIBRO
       </button>
 
-
       <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
         <div class="modal-dialog modal-xl">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">¡Disfrute de su lectura!</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                ¡Disfrute de su lectura!
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
             <div class="modal-body">
-              <embed src="libros/juegos1.pdf" width="1100" height="800"
-              type="application/pdf">
+              <embed
+                src="libros/juegos1.pdf"
+                width="1100"
+                height="800"
+                type="application/pdf"
+              />
             </div>
           </div>
         </div>
       </div>
-
-
-
-
-
-
     </div>
 
     <hr class="divider" />
