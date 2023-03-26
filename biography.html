@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="h-100">
+<html lang="en">
 
 <head>
 
@@ -20,72 +20,17 @@
   
   <link rel="stylesheet" href="css/biography.css" />
   
-
-
-  <style>
-    .bd-placeholder-img {
-      font-size: 1.125rem;
-      text-anchor: middle;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      user-select: none;
-    }
-
-    @media (min-width: 768px) {
-      .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-      }
-    }
-
-    .b-example-divider {
-      height: 3rem;
-      background-color: rgba(0, 0, 0, .1);
-      border: solid rgba(0, 0, 0, .15);
-      border-width: 1px 0;
-      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-    }
-
-    .b-example-vr {
-      flex-shrink: 0;
-      width: 1.5rem;
-      height: 100vh;
-    }
-
-    .bi {
-      vertical-align: -.125em;
-      fill: currentColor;
-    }
-
-    .nav-scroller {
-      position: relative;
-      z-index: 2;
-      height: 2.75rem;
-      overflow-y: hidden;
-    }
-
-    .nav-scroller .nav {
-      display: flex;
-      flex-wrap: nowrap;
-      padding-bottom: 1rem;
-      margin-top: -1px;
-      overflow-x: auto;
-      text-align: center;
-      white-space: nowrap;
-      -webkit-overflow-scrolling: touch;
-    }
-  </style>
 </head>
 
-<body class="d-flex h-100 text-center text-bg-dark">
-  <div class=" d-flex w-100 h-100 p-3 mx-auto flex-column">
+<body class="d-flex text-bg-dark p-2">
     <header class="">
       <div>
         <a href="welcome.html">
             <h3 class="float-md-start mb-0">
-                <img src="images/Livroo.png" alt="Logo not found" href="welcome.html" width="100" height="48" />
+                <img src="images/Livroo.png" alt="Logo not found" width="100" height="48" />
             </h3>
         </a>
-        <nav id="imgperfil" class="nav justify-content-center float-md-end">
+        <nav id="imgperfil" class="nav float-md-end">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <img src="images/user.png" style="width: 45px; height: 45px" />
           </a>
@@ -111,9 +56,9 @@
 
     <div class="card bg-transparent">
         <div class="row g-1">
-          <div class="col-md-4 suzane">
-            <img src="../images/suzanne.png" class="img-fluid rounded w-50 img-end" alt="...">
-          </div>
+            <div class="col-md-4 suzane">
+                <img src="../images/suzanne.png" class="img-fluid rounded w-50" align="right" alt="...">
+            </div>
           <div class="col-md-8 cubo">
             <div class="card-body">
               <h5 class="card-text text-start">Suzanne Collins</h5>
@@ -127,11 +72,41 @@
             </div>
           </div>
         </div>
-      </div>
+    </div>
+
+    <div class="container-fluid w-50 pt-3 expositor ">
+        <h2 class="text-start mb-3">Libros de Suzanne Collins</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col px-2">
+            <div class="card bg-dark text-white">
+            <img class="card-img" src="images/libro1.jpg" alt="Card image">
+            <div class="card-img-overlay">
+                <a href="infoLibro.html" class="stretched-link"></a>
+            </div>
+            </div>
+        </div>
+        <div class="col px-2">
+            <div class="card bg-dark text-white">
+            <img class="card-img" src="images/libro2.jpg" alt="Card image">
+            <div class="card-img-overlay">
+                <a href="#" class="stretched-link"></a>
+            </div>
+            </div>
+        </div>
+        <div class="col px-2">
+            <div class="card bg-dark text-white">
+            <img class="card-img" src="images/libro3.jpg" alt="Card image">
+            <div class="card-img-overlay">
+                <a href="#" class="stretched-link"></a>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
 
     <footer class="container">
       <hr class="divider" />
-      <p class="float">
+      <p class="float text-center">
         &copy; 2023 Livroo &middot;
         <a href="#">Privacidad</a> &middot; <a href="#">Condiciones</a>
       </p>
