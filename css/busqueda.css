@@ -26,6 +26,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  height: auto;
 }
 
 div.d-flex.h-100.p-3.mx-auto.flex-column.justify-content-center{
