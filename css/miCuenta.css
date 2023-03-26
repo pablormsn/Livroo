@@ -16,6 +16,7 @@ footer {
     margin-top: 6rem;
   }
   body{
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
     background-image: url("../images/fondoPerfil.jpg") ;
     background-size: cover;
     color: white;
