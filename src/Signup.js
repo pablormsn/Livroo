@@ -1,10 +1,11 @@
 import React from "react";
 import "./assets/Signup.css";
 import logo from "./assets/Livroo.png";
+import Footer from "./components/Footer";
 
 export const Signup = () => {
   return (
-    <div className="signin-body" style={{ height: "100vh" }}>
+    <div className="signin-body text-center" style={{ height: "100vh" }}>
       <main className="form-signin w-100 m-auto">
         <form
           action="home"
@@ -54,7 +55,7 @@ export const Signup = () => {
               Repite la contraseña
             </label>
           </div>
-          <a href="signin.html" className="text-success">
+          <a href="signin" className="text-success">
             ¿Ya tienes una cuenta? Inicia sesión
           </a>
           <button
@@ -63,17 +64,8 @@ export const Signup = () => {
           >
             Registrarse
           </button>
-          <p className="text-white">
-            © 2023 Livroo ·
-            <a className="text-success" href="#">
-              Privacidad
-            </a>{" "}
-            ·
-            <a className="text-success" href="#">
-              Condiciones
-            </a>
-          </p>
         </form>
+        <Footer />
       </main>
     </div>
   );

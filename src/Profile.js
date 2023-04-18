@@ -3,6 +3,8 @@ import "./assets/Profile.css";
 import Headerbar from "./components/ProfileHeaderbar";
 import Footer from "./components/Footer";
 import user from "./assets/user.png";
+import Popup from "reactjs-popup";
+import "reactjs-popup/dist/index.css";
 
 export const Profile = () => {
   return (
@@ -77,6 +79,7 @@ export const Profile = () => {
                               className="form-control me-2"
                               type="dia"
                               aria-label="dia"
+                              placeholder="Día"
                             />
                             <select className="form-select me-2" id="mes">
                               <option value={1}>Enero</option>
@@ -96,6 +99,7 @@ export const Profile = () => {
                               className="form-control me-2"
                               type="anyo"
                               aria-label="anyo"
+                              placeholder="Año"
                             />
                           </form>
                         </div>
@@ -148,12 +152,22 @@ export const Profile = () => {
                     </div>
                   </div>
                   <div className="d-flex justify-content-center mb-2">
-                    <button
-                      type="button"
-                      className="btn btn-primary bg-success border-success"
-                    >
-                      Guardar
-                    </button>
+                    <div>
+                      <Popup
+                        trigger={
+                          <button
+                            type="button"
+                            className="btn btn-primary bg-success border-success"
+                          >
+                            {" "}
+                            Guardar{" "}
+                          </button>
+                        }
+                        position="top center"
+                      >
+                        <div className="text-center">¡Guardado!</div>
+                      </Popup>
+                    </div>
                   </div>
                   <div className="card mb-4" style={{ marginTop: "3rem" }}>
                     <div className="card-body">

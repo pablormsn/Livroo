@@ -11,7 +11,7 @@ import libro3 from "./assets/libro3.jpg";
 
 export const Home = () => {
   return (
-    <div>
+    <>
       <Headerbar />
       <main>
         <div id="myCarousel" className="carousel slide" data-bs-ride="carousel">
@@ -64,15 +64,16 @@ export const Home = () => {
             </div>
           </div>
         </div>
-        <div className="container text-center">
-          <div className="row">
+        <div className="container">
+          <h2>Novedades</h2>
+          <div className="row row-cols-2 row-cols-sm-3 row-cols-md-6 g-3">
             <div className="col">
               <div className="card">
                 <a href="infoJuegos">
                   <img
                     src={libro1}
                     className="d-block w-100 card-img-top zoom"
-                    alt="Image not found"
+                    alt="Not found"
                   />
                 </a>
                 <span className="visually-hidden">Los Juegos del Hambre</span>
@@ -84,7 +85,7 @@ export const Home = () => {
                   <img
                     src={libro2}
                     className="d-block w-100 card-img-top zoom"
-                    alt="Image not found"
+                    alt="Not found"
                   />
                 </a>
                 <span className="visually-hidden">
@@ -98,7 +99,7 @@ export const Home = () => {
                   <img
                     src={libro3}
                     className="d-block w-100 card-img-top zoom"
-                    alt="Image not found"
+                    alt="Not found"
                   />
                 </a>
                 <span className="visually-hidden">
@@ -112,7 +113,7 @@ export const Home = () => {
                   <img
                     src={libro1}
                     className="d-block w-100 card-img-top zoom"
-                    alt="Image not found"
+                    alt="Not found"
                   />
                 </a>
                 <span className="visually-hidden">Los Juegos del Hambre</span>
@@ -124,7 +125,7 @@ export const Home = () => {
                   <img
                     src={libro2}
                     className="d-block w-100 card-img-top zoom"
-                    alt="Image not found"
+                    alt="Not found"
                   />
                 </a>
                 <span className="visually-hidden">
@@ -138,7 +139,7 @@ export const Home = () => {
                   <img
                     src={libro3}
                     className="d-block w-100 card-img-top zoom"
-                    alt="Image not found"
+                    alt="Not found"
                   />
                 </a>
                 <span className="visually-hidden">
@@ -147,14 +148,15 @@ export const Home = () => {
               </div>
             </div>
           </div>
-          <div className="row">
+          <h2>Recomendados</h2>
+          <div className="row row-cols-2 row-cols-sm-3 row-cols-md-6 g-3">
             <div className="col">
               <div className="card">
                 <a href="infoJuegos">
                   <img
                     src={libro1}
                     className="d-block w-100 card-img-top zoom"
-                    alt="Image not found"
+                    alt="Not found"
                   />
                 </a>
                 <span className="visually-hidden">Los Juegos del Hambre</span>
@@ -166,7 +168,7 @@ export const Home = () => {
                   <img
                     src={libro2}
                     className="d-block w-100 card-img-top zoom"
-                    alt="Image not found"
+                    alt="Not found"
                   />
                 </a>
                 <span className="visually-hidden">
@@ -180,7 +182,7 @@ export const Home = () => {
                   <img
                     src={libro3}
                     className="d-block w-100 card-img-top zoom"
-                    alt="Image not found"
+                    alt="Not found"
                   />
                 </a>
                 <span className="visually-hidden">
@@ -194,7 +196,7 @@ export const Home = () => {
                   <img
                     src={libro1}
                     className="d-block w-100 card-img-top zoom"
-                    alt="Image not found"
+                    alt="Not found"
                   />
                 </a>
                 <span className="visually-hidden">Los Juegos del Hambre</span>
@@ -206,7 +208,7 @@ export const Home = () => {
                   <img
                     src={libro2}
                     className="d-block w-100 card-img-top zoom"
-                    alt="Image not found"
+                    alt="Not found"
                   />
                 </a>
                 <span className="visually-hidden">
@@ -220,7 +222,7 @@ export const Home = () => {
                   <img
                     src={libro3}
                     className="d-block w-100 card-img-top zoom"
-                    alt="Image not found"
+                    alt="Not found"
                   />
                 </a>
                 <span className="visually-hidden">
@@ -232,7 +234,7 @@ export const Home = () => {
         </div>
         <Footer />
       </main>
-    </div>
+    </>
   );
 };
 

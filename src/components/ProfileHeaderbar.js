@@ -28,13 +28,8 @@ export default function ProfileHeaderbar() {
             </a>
             <ul className="dropdown-menu text-small">
               <li>
-                <a className="dropdown-item" href="settings">
-                  Settings
-                </a>
-              </li>
-              <li>
                 <a className="dropdown-item" href="profile">
-                  Profile
+                  Perfil
                 </a>
               </li>
               <li>
@@ -42,7 +37,7 @@ export default function ProfileHeaderbar() {
               </li>
               <li>
                 <a className="dropdown-item" href="/">
-                  Sign out
+                  Cerrar sesión
                 </a>
               </li>
             </ul>
