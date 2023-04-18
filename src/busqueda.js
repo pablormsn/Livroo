@@ -10,8 +10,11 @@ import imagen2 from "./assets/libro2.jpg";
 import imagen3 from "./assets/libro3.jpg";
 import { ChangeEvent, useState } from "react";
 import ProfileHeaderbar from "./components/ProfileHeaderbar"
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 
 export const Busqueda = () => {
+  const { state } = useLocation();
   const [message, setMessage] = useState('');
 
   const handleChange = (event) => {
@@ -23,14 +26,22 @@ export const Busqueda = () => {
   };
   const handleKeyDown = (event) => {
     if (event.key === 'Enter') {
-      /*search_book(message);*/
-      alert(this.props);
+      search_book(message);
     }
   };
 
 
-  function search_book(message) {
-    let input = message;
+  useEffect(() => {
+    let ignore = false;
+    
+    if (!ignore)  search_book(state);setMessage(state)
+    return () => { ignore = true; }
+    },[]);
+
+
+  function search_book(hola) {
+    let input = hola;
+    if(input===null)input="";
     input = input.toLowerCase();
     let x = document.getElementsByClassName('card-img');
 
@@ -46,6 +57,7 @@ export const Busqueda = () => {
           x[i].parentElement.parentElement.style.width = "0px";
         }
     }
+    
   }
 
 

@@ -3,33 +3,41 @@ import logo from "../assets/Livroo.png";
 import user from "../assets/user.png";
 import { ChangeEvent, useState } from "react";
 import { useNavigate } from 'react-router-dom';
+import lupa from "../assets/search.png"
 
 
 export default function Headerbar() {
    
   const [message, setMessage] = useState('');
   const navigate = useNavigate();
+  let mensaje="";
 
   const handleChange = (event) => {
     setMessage(event.target.value);
   };
 
   const handleClick = () => {
-    this.props.history.push({pathname: '/busqueda', state: message});
+    if(message!=null)mensaje=message;
+    navigate(
+      '/busqueda',
+      {
+        state: mensaje,
+        replace:true
+      },
+    );
   };
 
 
 
   const handleKeyDown = (event) => {
     if (event.key === 'Enter') {
-      alert(message);
+      if(message!=null)mensaje=message;
       navigate(
         '/busqueda',
         {
-          state: {
-            message
-          }
-        }
+          state: mensaje,
+          replace:true
+        },
       );
     }
   };
@@ -46,7 +54,7 @@ export default function Headerbar() {
           </a>
           <div className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" />
           <form
-            className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3"
+            className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-1"
             role="search"
           >
             <input
@@ -60,6 +68,20 @@ export default function Headerbar() {
               value={message}
             />
           </form>
+          <div className="text-end">
+            <a
+              href=""
+              className="d-block link-dark text-decoration-none me-lg-2"
+              onClick={handleClick}
+            >
+              <img
+                src={lupa}
+                alt="lupa"
+                width={16}
+                height={16}
+              />
+            </a>
+          </div>
           <div className="dropdown text-end">
             <a
               href="#"
