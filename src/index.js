@@ -10,11 +10,26 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "./assets/index.css";
 import reportWebVitals from "./reportWebVitals";
+import App from "./App";
+import Signin from "./Signin";
+import Signup from "./Signup";
 import Home from "./Home";
 import Busqueda from "./busqueda";
 import Profile from "./Profile";
 
 const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "signin",
+    element: <Signin />,
+  },
+  {
+    path: "signup",
+    element: <Signup />,
+  },
   {
     path: "home",
     element: <Home />,
