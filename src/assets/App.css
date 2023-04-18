@@ -7,7 +7,7 @@
 
 .app-body {
   box-shadow: inset 0 0 0 5000000px rgba(0, 0, 0, 0.8);
-  background-image: url("../assets/busqueda.jpg");
+  background-image: url("./busqueda.jpg");
 }
 
 .cover-container {
