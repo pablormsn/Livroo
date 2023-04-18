@@ -14,8 +14,10 @@ import App from "./App";
 import Signin from "./Signin";
 import Signup from "./Signup";
 import Home from "./Home";
-import Busqueda from "./busqueda";
+import Busqueda from "./Busqueda";
 import Profile from "./Profile";
+import InfoLibro from "./InfoLibro";
+import Biography from "./Biography";
 
 const router = createBrowserRouter([
   {
@@ -35,12 +37,20 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "buscar",
+    path: "busqueda",
     element: <Busqueda />,
   },
   {
     path: "profile",
     element: <Profile />,
+  },
+  {
+    path: "infoLibro",
+    element: <InfoLibro />
+  },
+  {
+    path: "biography",
+    element: <Biography />
   },
 ]);
 

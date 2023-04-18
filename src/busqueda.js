@@ -1,78 +1,62 @@
 import logo from './logo.svg';
 import './assets/App.css';
+import Footer from "./components/Footer.js";
+import "./assets/infoLibro.css";
+import Headerbar from "./components/Headerbar.js";
+import port from "./assets/portada.jpg";
+import libro from "./assets/juegos1.pdf";
+import imagen1 from "./assets/libro1.jpg";
+import imagen2 from "./assets/libro2.jpg";
+import imagen3 from "./assets/libro3.jpg";
+import { ChangeEvent, useState } from "react";
+import ProfileHeaderbar from "./components/ProfileHeaderbar"
 
-function Busqueda() {
+export const Busqueda = () => {
+  const [message, setMessage] = useState('');
+
+  const handleChange = (event) => {
+    setMessage(event.target.value);
+  };
+
+  const handleClick = () => {
+    search_book(message);
+  };
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      /*search_book(message);*/
+      alert(this.props);
+    }
+  };
+
+
+  function search_book(message) {
+    let input = message;
+    input = input.toLowerCase();
+    let x = document.getElementsByClassName('card-img');
+
+    for (let i = 0; i < x.length; i++) {
+        if (x[i].id.toLowerCase().includes(input)) {
+          x[i].parentElement.parentElement.style.height = "294.78px";
+          x[i].parentElement.parentElement.style.width = "210.66px";
+          x[i].parentElement.style.display="flex";
+        }
+        else {
+          x[i].parentElement.style.display = "none";
+          x[i].parentElement.parentElement.style.height = "0px";
+          x[i].parentElement.parentElement.style.width = "0px";
+        }
+    }
+  }
+
+
+
+
+
+
+
   return (
     <>
-  <meta charSet="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="" />
-  <title>Livroo</title>
-  <link
-    rel="icon"
-    type="image/x-icon"
-    href="/images//favicon/favicon-32x32.png"
-  />
-  <link rel="stylesheet" href="css/busqueda.css" />
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
-  />
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
-    crossOrigin="anonymous"
-  />
-  <header className="">
-    <div>
-      <a href="welcome.html">
-        <h3 className="float-md-start mt-auto">
-          <img
-            src="images/Livroo.png"
-            alt="Logo not found"
-            width={100}
-            height={48}
-          />
-        </h3>
-      </a>
-      <nav id="imgperfil" className="nav float-md-end">
-        <a
-          className="nav-link dropdown-toggle"
-          href="#"
-          role="button"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          <img src="images/user.png" style={{ width: 42, height: 42 }} />
-        </a>
-        <ul className="dropdown-menu dropdown-menu-end">
-          <li>
-            <a className="dropdown-item" href="miCuenta.html">
-              Mi cuenta
-            </a>
-          </li>
-          <li>
-            <hr className="dropdown-divider" />
-          </li>
-          <li>
-            <a className="dropdown-item" href="index.html">
-              Cerrar sesión
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <nav className="nav float-md-end nav-masthead pt-1">
-        <a
-          className="nav-link nav-masthead fw-bold px-2 active align-self-center"
-          aria-current="page"
-          href="busqueda.html"
-        >
-          <img src="images/lupa.png" style={{ width: 46, height: 26 }} />
-        </a>
-      </nav>
-    </div>
-  </header>
+  <ProfileHeaderbar />
   <div className="d-flex h-100 p-3 mx-auto flex-column justify-content-center">
     <main className="px-3 cover-container">
       <div className="">
@@ -82,16 +66,20 @@ function Busqueda() {
         <div className="barra card">
           <div className="card-body d-flex justify-content-between align-items-center border-success">
             <input
-              id="myInput"
+              id="message"
               className="form-control"
               type="search"
               placeholder="Buscar"
               aria-label="Search"
               style={{ width: 500 }}
+              onChange={handleChange}
+              onKeyDown={handleKeyDown}
+              value={message}
             />
             <div className="card-body d-flex justify-content-between align-items-center">
               <a
-                onclick="search_book()"
+                onClick={handleClick}
+                
                 className="btn btn-outline-success"
                 type="submit"
               >
@@ -148,12 +136,12 @@ function Busqueda() {
                 <img
                   id="Los Juegos Del Hambre"
                   className="card-img"
-                  src="images/libro1.jpg"
+                  src={imagen1}
                   alt="Card image"
                 />
                 <div className="card-img-overlay">
                   <a
-                    href="infoLibros/infoJuegos.html"
+                    href="infoLibro"
                     className="stretched-link"
                   />
                 </div>
@@ -164,12 +152,12 @@ function Busqueda() {
                 <img
                   id="Los Juegos Del Hambre En Llamas"
                   className="card-img"
-                  src="images/libro2.jpg"
+                  src={imagen2}
                   alt="Card image"
                 />
                 <div className="card-img-overlay">
                   <a
-                    href="infoLibros/infoLlamas.html"
+                    href="infoLibro"
                     className="stretched-link"
                   />
                 </div>
@@ -180,12 +168,12 @@ function Busqueda() {
                 <img
                   id="Los Juegos Del Hambre Sinsajo"
                   className="card-img"
-                  src="images/libro3.jpg"
+                  src={imagen3}
                   alt="Card image"
                 />
                 <div className="card-img-overlay">
                   <a
-                    href="infoLibros/infoSinsajo.html"
+                    href="infoLibro"
                     className="stretched-link"
                   />
                 </div>
@@ -196,22 +184,11 @@ function Busqueda() {
       </div>
     </main>
   </div>
-  <footer className="container">
-    <hr className="divider" />
-    <p className="float text-center">
-      © 2023 Livroo ·
-      <a className="text-success" href="#">
-        Privacidad
-      </a>{" "}
-      ·
-      <a className="text-success" href="#">
-        Condiciones
-      </a>
-    </p>
-  </footer>
+  <Footer />
 </>
 
+      
   );
-}
+};
 
-export default Busqueda; 
+export default Busqueda;

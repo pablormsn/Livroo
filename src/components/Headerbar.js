@@ -1,9 +1,43 @@
 import "../assets/Headerbar.css";
 import logo from "../assets/Livroo.png";
 import user from "../assets/user.png";
+import { ChangeEvent, useState } from "react";
+import { useNavigate } from 'react-router-dom';
+
 
 export default function Headerbar() {
+   
+  const [message, setMessage] = useState('');
+  const navigate = useNavigate();
+
+  const handleChange = (event) => {
+    setMessage(event.target.value);
+  };
+
+  const handleClick = () => {
+    this.props.history.push({pathname: '/busqueda', state: message});
+  };
+
+
+
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      alert(message);
+      navigate(
+        '/busqueda',
+        {
+          state: {
+            message
+          }
+        }
+      );
+    }
+  };
+
+
   return (
+
+
     <header className="p-3 border-bottom">
       <div className="container-fluid">
         <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -16,10 +50,14 @@ export default function Headerbar() {
             role="search"
           >
             <input
+              id="myInput"
               type="search"
               className="form-control"
               placeholder="Search..."
               aria-label="Search"
+              onChange={handleChange}
+              onKeyDown={handleKeyDown}
+              value={message}
             />
           </form>
           <div className="dropdown text-end">
