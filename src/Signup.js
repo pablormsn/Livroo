@@ -7,11 +7,11 @@ export const Signup = () => {
     <div className="signin-body" style={{ height: "100vh" }}>
       <main className="form-signin w-100 m-auto">
         <form
-          action="welcome.html"
+          action="home"
           method="get"
           className="container bg-dark p-3 rounded-5 bg-opacity-75"
         >
-          <a href="index.html">
+          <a href="/">
             <img
               className="mb-4"
               src={logo}
