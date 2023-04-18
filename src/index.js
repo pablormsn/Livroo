@@ -16,7 +16,9 @@ import Signup from "./Signup";
 import Home from "./Home";
 import Busqueda from "./Busqueda";
 import Profile from "./Profile";
-import InfoLibro from "./InfoLibro";
+import InfoJuegos from "./InfoJuegos";
+import InfoLlamas from "./InfoLlamas";
+import InfoSinsajo from "./InfoSinsajo";
 import Biography from "./Biography";
 
 const router = createBrowserRouter([
@@ -45,12 +47,20 @@ const router = createBrowserRouter([
     element: <Profile />,
   },
   {
-    path: "infoLibro",
-    element: <InfoLibro />
+    path: "infoJuegos",
+    element: <InfoJuegos />,
+  },
+  {
+    path: "infoLlamas",
+    element: <InfoLlamas />,
+  },
+  {
+    path: "infoSinsajo",
+    element: <InfoSinsajo />,
   },
   {
     path: "biography",
-    element: <Biography />
+    element: <Biography />,
   },
 ]);
 

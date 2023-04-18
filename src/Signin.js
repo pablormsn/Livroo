@@ -1,6 +1,7 @@
 import React from "react";
 import "./assets/Signin.css";
 import logo from "./assets/Livroo.png";
+import Footer from "./components/Footer";
 
 export const Signin = () => {
   return (
@@ -57,17 +58,8 @@ export const Signin = () => {
           >
             Iniciar sesión
           </button>
-          <p className="text-white">
-            © 2023 Livroo ·
-            <a className="text-success" href="#">
-              Privacidad
-            </a>{" "}
-            ·
-            <a className="text-success" href="#">
-              Condiciones
-            </a>
-          </p>
         </form>
+        <Footer />
       </main>
     </div>
   );

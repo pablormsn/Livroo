@@ -24,7 +24,7 @@ function App() {
             </nav>
           </div>
         </header>
-        <main className="px-3 mt-5">
+        <main className="px-3 mt-5 text-center">
           <h1 className="cover-text">Le damos la bienvenida</h1>
           <p className="lead cover-text">
             Livroo es una plataforma de lectura en línea, donde podrá disfrutar

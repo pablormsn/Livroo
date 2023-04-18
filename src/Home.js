@@ -68,7 +68,7 @@ export const Home = () => {
           <div className="row">
             <div className="col">
               <div className="card">
-                <a href="infoLibros/infoJuegos.html">
+                <a href="infoJuegos">
                   <img
                     src={libro1}
                     className="d-block w-100 card-img-top zoom"
@@ -80,7 +80,7 @@ export const Home = () => {
             </div>
             <div className="col">
               <div className="card">
-                <a href="infoLibros/infoLlamas.html">
+                <a href="infoLlamas">
                   <img
                     src={libro2}
                     className="d-block w-100 card-img-top zoom"
@@ -94,7 +94,7 @@ export const Home = () => {
             </div>
             <div className="col">
               <div className="card">
-                <a href="infoLibros/infoSinsajo.html">
+                <a href="infoSinsajo">
                   <img
                     src={libro3}
                     className="d-block w-100 card-img-top zoom"
@@ -108,7 +108,7 @@ export const Home = () => {
             </div>
             <div className="col">
               <div className="card">
-                <a href="infoLibros/infoJuegos.html">
+                <a href="infoJuegos">
                   <img
                     src={libro1}
                     className="d-block w-100 card-img-top zoom"
@@ -120,7 +120,7 @@ export const Home = () => {
             </div>
             <div className="col">
               <div className="card">
-                <a href="infoLibros/infoLlamas.html">
+                <a href="infoLlamas">
                   <img
                     src={libro2}
                     className="d-block w-100 card-img-top zoom"
@@ -134,7 +134,7 @@ export const Home = () => {
             </div>
             <div className="col">
               <div className="card">
-                <a href="infoLibros/infoSinsajo.html">
+                <a href="infoSinsajo">
                   <img
                     src={libro3}
                     className="d-block w-100 card-img-top zoom"
@@ -150,7 +150,7 @@ export const Home = () => {
           <div className="row">
             <div className="col">
               <div className="card">
-                <a href="infoLibros/infoJuegos.html">
+                <a href="infoJuegos">
                   <img
                     src={libro1}
                     className="d-block w-100 card-img-top zoom"
@@ -162,7 +162,7 @@ export const Home = () => {
             </div>
             <div className="col">
               <div className="card">
-                <a href="infoLibros/infoLlamas.html">
+                <a href="infoLlamas">
                   <img
                     src={libro2}
                     className="d-block w-100 card-img-top zoom"
@@ -176,7 +176,7 @@ export const Home = () => {
             </div>
             <div className="col">
               <div className="card">
-                <a href="infoLibros/infoSinsajo.html">
+                <a href="infoSinsajo">
                   <img
                     src={libro3}
                     className="d-block w-100 card-img-top zoom"
@@ -190,7 +190,7 @@ export const Home = () => {
             </div>
             <div className="col">
               <div className="card">
-                <a href="infoLibros/infoJuegos.html">
+                <a href="infoJuegos">
                   <img
                     src={libro1}
                     className="d-block w-100 card-img-top zoom"
@@ -202,7 +202,7 @@ export const Home = () => {
             </div>
             <div className="col">
               <div className="card">
-                <a href="infoLibros/infoLlamas.html">
+                <a href="infoLlamas">
                   <img
                     src={libro2}
                     className="d-block w-100 card-img-top zoom"
@@ -216,7 +216,7 @@ export const Home = () => {
             </div>
             <div className="col">
               <div className="card">
-                <a href="infoLibros/infoSinsajo.html">
+                <a href="infoSinsajo">
                   <img
                     src={libro3}
                     className="d-block w-100 card-img-top zoom"
