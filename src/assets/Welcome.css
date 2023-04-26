@@ -5,7 +5,7 @@
   text-shadow: none;
 }
 
-.app-body {
+.welcome-body {
   box-shadow: inset 0 0 0 5000000px rgba(0, 0, 0, 0.8);
   background-image: url("./busqueda.jpg");
   background-size: cover;

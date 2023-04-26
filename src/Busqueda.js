@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./assets/Busqueda.css";
 import ProfileHeaderbar from "./components/ProfileHeaderbar";
 import Footer from "./components/Footer.js";
@@ -101,18 +102,22 @@ export const Busqueda = () => {
                   value={message}
                 />
                 <div className="card-body d-flex justify-content-between align-items-center">
-                  <a
+                  <Link
                     onClick={handleClick}
                     className="btn btn-outline-success"
                     type="submit"
                   >
                     Buscar
-                  </a>
+                  </Link>
                   <nav
                     id="imgperfil"
                     className="nav justify-content-center float-md-end"
                   >
-                    <a href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                    <Link
+                      to="#"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
                       <button
                         className="btn me-2 dropdown-toggle"
                         type="button"
@@ -123,22 +128,22 @@ export const Busqueda = () => {
                       >
                         <Icon.Filter size={24} className="text-success" />
                       </button>
-                    </a>
+                    </Link>
                     <ul className="dropdown-menu dropdown-menu-end">
                       <li>
-                        <a className="dropdown-item" href="#">
+                        <Link className="dropdown-item" to="#">
                           {" "}
                           menos &lt; más (páginas){" "}
-                        </a>
+                        </Link>
                       </li>
                       <li>
                         <hr className="dropdown-divider" />
                       </li>
                       <li>
-                        <a className="dropdown-item" href="#">
+                        <Link className="dropdown-item" to="#">
                           {" "}
                           más &gt; menos (páginas)
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </nav>
@@ -158,7 +163,7 @@ export const Busqueda = () => {
                     alt="Card"
                   />
                   <div className="card-img-overlay">
-                    <a href="infoJuegos" className="stretched-link" />
+                    <Link to="/infoJuegos" className="stretched-link" />
                   </div>
                 </div>
               </div>
@@ -171,7 +176,7 @@ export const Busqueda = () => {
                     alt="Card"
                   />
                   <div className="card-img-overlay">
-                    <a href="infoLlamas" className="stretched-link" />
+                    <Link to="/infoLlamas" className="stretched-link" />
                   </div>
                 </div>
               </div>
@@ -184,7 +189,7 @@ export const Busqueda = () => {
                     alt="Card"
                   />
                   <div className="card-img-overlay">
-                    <a href="infoSinsajo" className="stretched-link" />
+                    <Link to="/infoSinsajo" className="stretched-link" />
                   </div>
                 </div>
               </div>

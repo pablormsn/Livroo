@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Footer from "./components/Footer.js";
 import Headerbar from "./components/Headerbar.js";
 import libro1 from "./assets/libro1.jpg";
@@ -58,25 +59,25 @@ export const Biography = () => {
           <div className="row row-cols-2 row-cols-sm-3 row-cols-md-6 g-3 d-flex justify-content-center">
             <div className="col">
               <div className="card">
-                <a href="infoJuegos">
+                <Link to="/infoJuegos">
                   <img
                     src={libro1}
                     className="d-block w-100 card-img-top zoom"
                     alt="Not found"
                   />
-                </a>
+                </Link>
                 <span className="visually-hidden">Los Juegos del Hambre</span>
               </div>
             </div>
             <div className="col">
               <div className="card">
-                <a href="infoLlamas">
+                <Link to="/infoLlamas">
                   <img
                     src={libro2}
                     className="d-block w-100 card-img-top zoom"
                     alt="Not found"
                   />
-                </a>
+                </Link>
                 <span className="visually-hidden">
                   Los juegos del hambre: En Llamas
                 </span>
@@ -84,13 +85,13 @@ export const Biography = () => {
             </div>
             <div className="col">
               <div className="card">
-                <a href="infoSinsajo">
+                <Link to="/infoSinsajo">
                   <img
                     src={libro3}
                     className="d-block w-100 card-img-top zoom"
                     alt="Not found"
                   />
-                </a>
+                </Link>
                 <span className="visually-hidden">
                   Los Juegos del Hambre: Sinsajo
                 </span>

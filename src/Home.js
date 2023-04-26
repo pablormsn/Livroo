@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React from "react";
 import Headerbar from "./components/Headerbar";
 import Footer from "./components/Footer";
@@ -69,25 +70,25 @@ export const Home = () => {
           <div className="row row-cols-2 row-cols-sm-3 row-cols-md-6 g-3">
             <div className="col">
               <div className="card">
-                <a href="infoJuegos">
+                <Link to="/infoJuegos">
                   <img
                     src={libro1}
                     className="d-block w-100 card-img-top zoom"
                     alt="Not found"
                   />
-                </a>
+                </Link>
                 <span className="visually-hidden">Los Juegos del Hambre</span>
               </div>
             </div>
             <div className="col">
               <div className="card">
-                <a href="infoLlamas">
+                <Link to="/infoLlamas">
                   <img
                     src={libro2}
                     className="d-block w-100 card-img-top zoom"
                     alt="Not found"
                   />
-                </a>
+                </Link>
                 <span className="visually-hidden">
                   Los juegos del hambre: En Llamas
                 </span>
@@ -95,13 +96,13 @@ export const Home = () => {
             </div>
             <div className="col">
               <div className="card">
-                <a href="infoSinsajo">
+                <Link to="/infoSinsajo">
                   <img
                     src={libro3}
                     className="d-block w-100 card-img-top zoom"
                     alt="Not found"
                   />
-                </a>
+                </Link>
                 <span className="visually-hidden">
                   Los Juegos del Hambre: Sinsajo
                 </span>
@@ -109,25 +110,25 @@ export const Home = () => {
             </div>
             <div className="col">
               <div className="card">
-                <a href="infoJuegos">
+                <Link href="/infoJuegos">
                   <img
                     src={libro1}
                     className="d-block w-100 card-img-top zoom"
                     alt="Not found"
                   />
-                </a>
+                </Link>
                 <span className="visually-hidden">Los Juegos del Hambre</span>
               </div>
             </div>
             <div className="col">
               <div className="card">
-                <a href="infoLlamas">
+                <Link to="/infoLlamas">
                   <img
                     src={libro2}
                     className="d-block w-100 card-img-top zoom"
                     alt="Not found"
                   />
-                </a>
+                </Link>
                 <span className="visually-hidden">
                   Los juegos del hambre: En Llamas
                 </span>
@@ -135,13 +136,13 @@ export const Home = () => {
             </div>
             <div className="col">
               <div className="card">
-                <a href="infoSinsajo">
+                <Link to="/infoSinsajo">
                   <img
                     src={libro3}
                     className="d-block w-100 card-img-top zoom"
                     alt="Not found"
                   />
-                </a>
+                </Link>
                 <span className="visually-hidden">
                   Los Juegos del Hambre: Sinsajo
                 </span>
@@ -152,25 +153,25 @@ export const Home = () => {
           <div className="row row-cols-2 row-cols-sm-3 row-cols-md-6 g-3">
             <div className="col">
               <div className="card">
-                <a href="infoJuegos">
+                <Link to="/infoJuegos">
                   <img
                     src={libro1}
                     className="d-block w-100 card-img-top zoom"
                     alt="Not found"
                   />
-                </a>
+                </Link>
                 <span className="visually-hidden">Los Juegos del Hambre</span>
               </div>
             </div>
             <div className="col">
               <div className="card">
-                <a href="infoLlamas">
+                <Link to="/infoLlamas">
                   <img
                     src={libro2}
                     className="d-block w-100 card-img-top zoom"
                     alt="Not found"
                   />
-                </a>
+                </Link>
                 <span className="visually-hidden">
                   Los juegos del hambre: En Llamas
                 </span>
@@ -178,13 +179,13 @@ export const Home = () => {
             </div>
             <div className="col">
               <div className="card">
-                <a href="infoSinsajo">
+                <Link to="/infoSinsajo">
                   <img
                     src={libro3}
                     className="d-block w-100 card-img-top zoom"
                     alt="Not found"
                   />
-                </a>
+                </Link>
                 <span className="visually-hidden">
                   Los Juegos del Hambre: Sinsajo
                 </span>
@@ -192,25 +193,25 @@ export const Home = () => {
             </div>
             <div className="col">
               <div className="card">
-                <a href="infoJuegos">
+                <Link to="/infoJuegos">
                   <img
                     src={libro1}
                     className="d-block w-100 card-img-top zoom"
                     alt="Not found"
                   />
-                </a>
+                </Link>
                 <span className="visually-hidden">Los Juegos del Hambre</span>
               </div>
             </div>
             <div className="col">
               <div className="card">
-                <a href="infoLlamas">
+                <Link to="/infoLlamas">
                   <img
                     src={libro2}
                     className="d-block w-100 card-img-top zoom"
                     alt="Not found"
                   />
-                </a>
+                </Link>
                 <span className="visually-hidden">
                   Los juegos del hambre: En Llamas
                 </span>
@@ -218,13 +219,13 @@ export const Home = () => {
             </div>
             <div className="col">
               <div className="card">
-                <a href="infoSinsajo">
+                <Link to="/infoSinsajo">
                   <img
                     src={libro3}
                     className="d-block w-100 card-img-top zoom"
                     alt="Not found"
                   />
-                </a>
+                </Link>
                 <span className="visually-hidden">
                   Los Juegos del Hambre: Sinsajo
                 </span>

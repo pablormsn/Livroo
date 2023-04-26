@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../assets/Headerbar.css";
 import logo from "../assets/Livroo.png";
 import user from "../assets/user.png";
@@ -36,9 +37,9 @@ export default function Headerbar() {
     <header className="p-3 border-bottom">
       <div className="container-fluid">
         <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="home" className="navbar-brand">
+          <Link to="/home" className="navbar-brand">
             <img src={logo} alt="Livroo" width={64} height={32} />
-          </a>
+          </Link>
           <div className="nav col-12 col-lg-auto me-lg-auto mb-2 mb-md-0" />
           <form
             className="col col-lg-auto mb-3 mb-lg-0 me-lg-1"
@@ -57,17 +58,17 @@ export default function Headerbar() {
             />
           </form>
           <div style={{ marginLeft: 6, marginRight: 6 }}>
-            <a
-              href=""
+            <Link
+              to=""
               className="d-block link-dark text-decoration-none me-lg-2"
               onClick={handleClick}
             >
               <img src={lupa} alt="lupa" width={16} height={16} />
-            </a>
+            </Link>
           </div>
           <div className="dropdown text-end">
-            <a
-              href="#"
+            <Link
+              to="#"
               className="d-block link-dark text-decoration-none"
               data-bs-toggle="dropdown"
               aria-expanded="false"
@@ -79,20 +80,20 @@ export default function Headerbar() {
                 width={32}
                 height={32}
               />
-            </a>
+            </Link>
             <ul className="dropdown-menu text-small">
               <li>
-                <a className="dropdown-item" href="profile">
+                <Link className="dropdown-item" to="/profile">
                   Perfil
-                </a>
+                </Link>
               </li>
               <li>
                 <hr className="dropdown-divider" />
               </li>
               <li>
-                <a className="dropdown-item" href="/">
+                <Link className="dropdown-item" to="/">
                   Cerrar sesión
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
