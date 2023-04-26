@@ -24,7 +24,6 @@ function App() {
         <Route path="/infoLlamas" element={<InfoLlamas />}></Route>
         <Route path="/infoSinsajo" element={<InfoSinsajo />}></Route>
         <Route path="/biography" element={<Biography />}></Route>
-        <Route path="*" element={<h1>Página no encontrada</h1>} />
       </Routes>
     </BrowserRouter>
   );
