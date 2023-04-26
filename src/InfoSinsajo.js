@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./assets/infoLibro.css";
 import Footer from "./components/Footer.js";
 import Headerbar from "./components/Headerbar.js";
@@ -13,9 +12,9 @@ export const InfoSinsajo = () => {
       <div className="infoLibro-body">
         <div className="container">
           <p style={{ fontSize: "large" }}>
-            <Link className="link" to="/home">
+            <a className="link" href="home">
               Libros
-            </Link>{" "}
+            </a>{" "}
             &gt; Los Juegos Del Hambre: Sinsajo
           </p>
         </div>
@@ -83,9 +82,9 @@ export const InfoSinsajo = () => {
                   Los Juegos del Hambre: Sinsajo{" "}
                 </h2>
                 <h4>
-                  <Link className="link" to="/biography">
+                  <a className="link" href="biography">
                     Suzanne Collins
-                  </Link>
+                  </a>
                 </h4>
                 <h5>Sinopsis:</h5>
                 <p>

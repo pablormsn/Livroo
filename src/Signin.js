@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import React from "react";
 import "./assets/Signin.css";
 import logo from "./assets/Livroo.png";
@@ -13,7 +12,7 @@ export const Signin = () => {
           method="get"
           className="container bg-dark p-3 rounded-5 bg-opacity-75"
         >
-          <Link to="/">
+          <a href="/">
             <img
               className="mb-4"
               src={logo}
@@ -21,7 +20,7 @@ export const Signin = () => {
               width={200}
               height={100}
             />
-          </Link>
+          </a>
           <h1 className="h3 mb-3 fw-normal text-white">Complete los campos</h1>
           <div className="form-floating">
             <input
@@ -45,14 +44,14 @@ export const Signin = () => {
               Contraseña
             </label>
           </div>
-          <Link to="/signin" className="text-success">
-            ¿No tienes cuenta? ¡Regístrate!
-          </Link>
+          <a href="signin" className="text-success">
+            ¿Ya tienes una cuenta? Inicia sesión
+          </a>
           <button
             className="w-100 btn btn-lg btn-primary bg-success border-success mt-2"
             type="submit"
           >
-            Iniciar sesión
+            Registrarse
           </button>
         </form>
         <Footer />
