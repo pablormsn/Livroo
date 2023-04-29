@@ -36,7 +36,7 @@ export const InfoLlamas = () => {
                     data-bs-toggle="modal"
                     data-bs-target="#exampleModal"
                   >
-                    LEER ESTE LIBRO
+                    LEER DE NUEVO
                   </button>
                   {/* Modal */}
                   <div
@@ -82,8 +82,14 @@ export const InfoLlamas = () => {
                   Los Juegos del Hambre: En Llamas{" "}
                 </h2>
                 <h4>
-                  <a className="link" href="biography">
+                  <a>
                     Suzanne Collins
+                  </a>
+                  <a> </a>
+                  <a className="link" href="biography">
+                    <i>
+                      <font size = "3">(Saber más)</font>
+                    </i>
                   </a>
                 </h4>
                 <h5>Sinopsis:</h5>
@@ -114,7 +120,7 @@ export const InfoLlamas = () => {
               </div>
               <div>
                 <h4>Progreso de lectura:</h4>
-                <ProgressBar variant="danger" now={80} />
+                <ProgressBar variant="success" now={100} />
               </div>
             </div>
           </div>

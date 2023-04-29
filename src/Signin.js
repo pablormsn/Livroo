@@ -44,14 +44,14 @@ export const Signin = () => {
               Contraseña
             </label>
           </div>
-          <a href="signin" className="text-success">
-            ¿Ya tienes una cuenta? Inicia sesión
+          <a href="signup" className="text-success">
+            ¿Aún no tienes cuenta? Regístrate
           </a>
           <button
             className="w-100 btn btn-lg btn-primary bg-success border-success mt-2"
             type="submit"
           >
-            Registrarse
+            Iniciar sesión
           </button>
         </form>
         <Footer />

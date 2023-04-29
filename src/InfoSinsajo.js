@@ -82,8 +82,14 @@ export const InfoSinsajo = () => {
                   Los Juegos del Hambre: Sinsajo{" "}
                 </h2>
                 <h4>
+                  <a>
+                    Suzanne Collins 
+                  </a>
+                  <a> </a>
                   <a className="link" href="biography">
-                    Suzanne Collins
+                    <i>
+                      <font size = "3">(Saber más)</font>
+                    </i>
                   </a>
                 </h4>
                 <h5>Sinopsis:</h5>
@@ -118,7 +124,7 @@ export const InfoSinsajo = () => {
               </div>
               <div>
                 <h4>Progreso de lectura:</h4>
-                <ProgressBar variant="info" now={20} />
+                <ProgressBar variant="danger" now={1} />
               </div>
             </div>
           </div>

@@ -5,8 +5,25 @@ import Footer from "./components/Footer";
 import user from "./assets/user.png";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
+import { useRef, useState } from 'react';
+import { useMemo } from 'react'
+import Select from 'react-select'
+import countryList from 'react-select-country-list'
 
 export const Profile = () => {
+  const [date, setDate] = useState('');
+  const dateInputRef = useRef(null);
+  
+  const handleChange = (e) => {
+  setDate(e.target.value);
+  };
+
+  const [value, setValue] = useState('')
+  const options = useMemo(() => countryList().getData(), [])
+
+  const changeHandler = value => {
+    setValue(value)
+  }
   return (
     <>
       <Headerbar />
@@ -74,34 +91,14 @@ export const Profile = () => {
                           <p className="mb-0">Fecha de nacimiento</p>
                         </div>
                         <div className="col-sm-9">
-                          <form className="d-flex" role="fechanacimiento">
+                          <div className="d-flex">
                             <input
+                              type="date"
+                              onChange={handleChange}
+                              ref={dateInputRef}
                               className="form-control me-2"
-                              type="dia"
-                              aria-label="dia"
-                              placeholder="Día"
                             />
-                            <select className="form-select me-2" id="mes">
-                              <option value={1}>Enero</option>
-                              <option value={2}>Febrero</option>
-                              <option value={3}>Marzo</option>
-                              <option value={4}>Abril</option>
-                              <option value={5}>Mayo</option>
-                              <option value={6}>Junio</option>
-                              <option value={7}>Julio</option>
-                              <option value={8}>Agosto</option>
-                              <option value={9}>Septiembre</option>
-                              <option value={10}>Octubre</option>
-                              <option value={11}>Noviembre</option>
-                              <option value={12}>Diciembre</option>
-                            </select>
-                            <input
-                              className="form-control me-2"
-                              type="anyo"
-                              aria-label="anyo"
-                              placeholder="Año"
-                            />
-                          </form>
+                          </div>
                         </div>
                       </div>
                       <hr />
@@ -110,13 +107,7 @@ export const Profile = () => {
                           <p className="mb-0">País</p>
                         </div>
                         <div className="col-sm-9">
-                          <form className="d-flex" role="pais">
-                            <input
-                              className="form-control me-2"
-                              type="pais"
-                              aria-label="pais"
-                            />
-                          </form>
+                          <Select options={options} value={value} onChange={changeHandler} className="me-2"/>
                         </div>
                       </div>
                       <hr />
@@ -179,7 +170,7 @@ export const Profile = () => {
                           <form className="d-flex" role="contrasena">
                             <input
                               className="form-control me-2"
-                              type="contrasena"
+                              type="password"
                               aria-label="contrasena"
                             />
                           </form>
@@ -194,7 +185,7 @@ export const Profile = () => {
                           <form className="d-flex" role="ccontrasena">
                             <input
                               className="form-control me-2"
-                              type="ccontrasena"
+                              type="password"
                               aria-label="ccontrasena"
                             />
                           </form>
@@ -203,12 +194,20 @@ export const Profile = () => {
                     </div>
                   </div>
                   <div className="d-flex justify-content-center mb-2">
-                    <button
-                      type="button"
-                      className="btn btn-primary bg-success border-success"
-                    >
-                      Cambiar contraseña
-                    </button>
+                  <Popup
+                        trigger={
+                          <button
+                            type="button"
+                            className="btn btn-primary bg-success border-success"
+                          >
+                            {" "}
+                            Cambiar contraseña{" "}
+                          </button>
+                        }
+                        position="top center"
+                      >
+                        <div className="text-center">¡Contraseña cambiada con éxito!</div>
+                      </Popup>
                   </div>
                 </div>
               </div>

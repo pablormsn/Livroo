@@ -36,7 +36,7 @@ export const InfoJuegos = () => {
                     data-bs-toggle="modal"
                     data-bs-target="#exampleModal"
                   >
-                    LEER ESTE LIBRO
+                    SEGUIR LEYENDO
                   </button>
                   {/* Modal */}
                   <div
@@ -82,8 +82,14 @@ export const InfoJuegos = () => {
                   Los Juegos del Hambre{" "}
                 </h2>
                 <h4>
+                  <a>
+                    Suzanne Collins 
+                  </a>
+                  <a> </a>
                   <a className="link" href="biography">
-                    Suzanne Collins
+                    <i>
+                      <font size = "3">(Saber más)</font>
+                    </i>
                   </a>
                 </h4>
                 <h5>Sinopsis:</h5>
@@ -100,7 +106,7 @@ export const InfoJuegos = () => {
               </div>
               <div>
                 <h4>Progreso de lectura:</h4>
-                <ProgressBar variant="success" now={40} />
+                <ProgressBar variant="warning" now={60} />
               </div>
             </div>
           </div>

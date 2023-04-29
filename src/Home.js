@@ -39,28 +39,34 @@ export const Home = () => {
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src={carousel1} alt="Libro 1" />
-              <div className="container">
-                <div className="carousel-caption text-start">
-                  <h1>Los Juegos del Hambre</h1>
-                </div>
-              </div>
+              <a href="infoJuegos">
+                <img src={carousel1} alt="Libro 1" />
+                  <div className="container">
+                    <div class="carousel-caption text-center text-dark bg-light p-2 rounded-3 bg-opacity-75" id="letrero">
+                      <h1>Los Juegos del Hambre</h1>
+                    </div>
+                  </div>
+              </a>
             </div>
             <div className="carousel-item">
-              <img src={carousel2} alt="Libro 2" />
-              <div className="container">
-                <div className="carousel-caption">
-                  <h1>Los Juegos del Hambre: En Llamas</h1>
-                </div>
-              </div>
+              <a href="infoLlamas">
+                <img src={carousel2} alt="Libro 2" />
+                  <div className="container">
+                    <div class="carousel-caption text-center text-dark bg-light p-2 rounded-3 bg-opacity-75" id="letrero">
+                      <h1>Los Juegos del Hambre: En Llamas</h1>
+                    </div>
+                  </div>
+              </a>
             </div>
             <div className="carousel-item">
-              <img src={carousel3} alt="Libro 3" />
-              <div className="container">
-                <div className="carousel-caption text-end">
-                  <h1>Los Juegos del Hambre: Sinsajo</h1>
-                </div>
-              </div>
+              <a href="infoSinsajo">
+                <img src={carousel3} alt="Libro 3" />
+                  <div className="container">
+                    <div class="carousel-caption text-center text-dark bg-light p-2 rounded-3 bg-opacity-75" id="letrero">
+                      <h1>Los Juegos del Hambre: Sinsajo</h1>
+                    </div>
+                  </div>
+              </a>
             </div>
           </div>
         </div>
