@@ -1,0 +1,69 @@
+@import "styles.css";
+@import "navbar.css";
+
+body {
+  color: #fff;
+  background-image: url("../images/libreria.jpg");
+  box-shadow: inset 0 0 0 5000px rgba(0, 0, 0, 0.8);
+  height: auto;
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+}
+
+.carousel {
+  margin-bottom: 4rem;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 32rem;
+}
+
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+.zoom {
+  transition: transform 0.4s;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+
+.card {
+  background: #000;
+}
+
+.row {
+  margin-bottom: 1.5rem;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#letrero{
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
