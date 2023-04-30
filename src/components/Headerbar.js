@@ -54,11 +54,12 @@ export default function Headerbar() {
               onChange={handleChange}
               onKeyDown={handleKeyDown}
               value={message}
+              title="Buscar"
             />
           </form>
           <div style={{ marginLeft: 6, marginRight: 6 }}>
             <a
-              href=""
+              href="#"
               className="d-block link-dark text-decoration-none me-lg-2"
               onClick={handleClick}
             >

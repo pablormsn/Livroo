@@ -5,39 +5,38 @@ import Footer from "./components/Footer";
 import user from "./assets/user.png";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
-import { useRef, useState } from 'react';
-import { useMemo } from 'react'
-import Select from 'react-select'
-import countryList from 'react-select-country-list'
+import { useRef, useState } from "react";
+import { useMemo } from "react";
+import Select from "react-select";
+import countryList from "react-select-country-list";
 
 export const Profile = () => {
-  
-  function texto(){
+  function texto() {
     let a = document.getElementById("contra").value;
     let b = document.getElementById("contraR").value;
-    if(a!==b){
-      document.getElementById("texto").innerHTML="Las contraseñas tienen que ser iguales";
+    if (a !== b) {
+      document.getElementById("texto").innerHTML =
+        "Las contraseñas tienen que ser iguales";
     }
-    if(a === null || a === "" || b === null || b === ""){
-      document.getElementById("texto").innerHTML="Los campos no pueden estar vacíos";
+    if (a === null || a === "" || b === null || b === "") {
+      document.getElementById("texto").innerHTML =
+        "Los campos no pueden estar vacíos";
     }
   }
 
-
-
-  const [date, setDate] = useState('');
+  const [date, setDate] = useState("");
   const dateInputRef = useRef(null);
-  
+
   const handleChange = (e) => {
-  setDate(e.target.value);
+    setDate(e.target.value);
   };
 
-  const [value, setValue] = useState('')
-  const options = useMemo(() => countryList().getData(), [])
+  const [value, setValue] = useState("");
+  const options = useMemo(() => countryList().getData(), []);
 
-  const changeHandler = value => {
-    setValue(value)
-  }
+  const changeHandler = (value) => {
+    setValue(value);
+  };
   return (
     <>
       <Headerbar />
@@ -80,6 +79,7 @@ export const Profile = () => {
                               className="form-control me-2"
                               type="nombre"
                               aria-label="nombre"
+                              title="Nombre"
                             />
                           </form>
                         </div>
@@ -95,6 +95,7 @@ export const Profile = () => {
                               className="form-control me-2"
                               type="apellidos"
                               aria-label="apellidos"
+                              title="Apellidos"
                             />
                           </form>
                         </div>
@@ -111,6 +112,7 @@ export const Profile = () => {
                               onChange={handleChange}
                               ref={dateInputRef}
                               className="form-control me-2"
+                              title="Fecha de nacimiento"
                             />
                           </div>
                         </div>
@@ -121,7 +123,12 @@ export const Profile = () => {
                           <p className="mb-0">País</p>
                         </div>
                         <div className="col-sm-9">
-                          <Select options={options} value={value} onChange={changeHandler} className="me-2"/>
+                          <Select
+                            options={options}
+                            value={value}
+                            onChange={changeHandler}
+                            className="me-2"
+                          />
                         </div>
                       </div>
                       <hr />
@@ -135,6 +142,7 @@ export const Profile = () => {
                               className="form-control me-2"
                               type="email"
                               aria-label="email"
+                              title="Correo electrónico"
                             />
                           </form>
                         </div>
@@ -150,6 +158,7 @@ export const Profile = () => {
                               className="form-control me-2"
                               type="usuario"
                               aria-label="usuario"
+                              title="Usuario"
                             />
                           </form>
                         </div>
@@ -183,10 +192,11 @@ export const Profile = () => {
                         <div className="col-sm-9">
                           <form className="d-flex" role="contrasena">
                             <input
-                            id="contra"
+                              id="contra"
                               className="form-control me-2"
                               type="password"
                               aria-label="contrasena"
+                              title="Contraseña"
                             />
                           </form>
                         </div>
@@ -199,10 +209,11 @@ export const Profile = () => {
                         <div className="col-sm-9">
                           <form className="d-flex" role="ccontrasena">
                             <input
-                            id="contraR"
+                              id="contraR"
                               className="form-control me-2"
                               type="password"
                               aria-label="ccontrasena"
+                              title="Repetir contraseña"
                             />
                           </form>
                         </div>
@@ -210,20 +221,23 @@ export const Profile = () => {
                     </div>
                   </div>
                   <div className="d-flex justify-content-center mb-2">
-                  <Popup onOpen={()=>texto()}
-                        trigger={
-                          <button
-                            type="button"
-                            className="btn btn-primary bg-success border-success"
-                          >
-                            {" "}
-                            Cambiar contraseña{" "}
-                          </button>
-                        }
-                        position="top center"
-                      >
-                        <div id="texto" className="text-center">¡Contraseña cambiada con éxito!</div>
-                      </Popup>
+                    <Popup
+                      onOpen={() => texto()}
+                      trigger={
+                        <button
+                          type="button"
+                          className="btn btn-primary bg-success border-success"
+                        >
+                          {" "}
+                          Cambiar contraseña{" "}
+                        </button>
+                      }
+                      position="top center"
+                    >
+                      <div id="texto" className="text-center">
+                        ¡Contraseña cambiada con éxito!
+                      </div>
+                    </Popup>
                   </div>
                 </div>
               </div>
