@@ -1,3 +1,9 @@
+.paco{
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
 .carousel {
   margin-bottom: 4rem;
 }

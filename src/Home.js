@@ -40,7 +40,7 @@ export const Home = () => {
           <div className="carousel-inner">
             <div className="carousel-item active">
               <a href="infoJuegos">
-                <img src={carousel1} alt="Libro 1" />
+                <img src={carousel1} alt="Libro 1" className="paco"/>
                   <div className="container">
                     <div class="carousel-caption text-center text-dark bg-light p-2 rounded-3 bg-opacity-75" id="letrero">
                       <h1>Los Juegos del Hambre</h1>
@@ -50,7 +50,7 @@ export const Home = () => {
             </div>
             <div className="carousel-item">
               <a href="infoLlamas">
-                <img src={carousel2} alt="Libro 2" />
+                <img src={carousel2} alt="Libro 2" className="paco"/>
                   <div className="container">
                     <div class="carousel-caption text-center text-dark bg-light p-2 rounded-3 bg-opacity-75" id="letrero">
                       <h1>Los Juegos del Hambre: En Llamas</h1>
@@ -60,7 +60,7 @@ export const Home = () => {
             </div>
             <div className="carousel-item">
               <a href="infoSinsajo">
-                <img src={carousel3} alt="Libro 3" />
+                <img src={carousel3} alt="Libro 3" className="paco"/>
                   <div className="container">
                     <div class="carousel-caption text-center text-dark bg-light p-2 rounded-3 bg-opacity-75" id="letrero">
                       <h1>Los Juegos del Hambre: Sinsajo</h1>
