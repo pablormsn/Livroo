@@ -25,7 +25,7 @@ function App() {
           </div>
         </header>
         <main className="px-3 mt-5 text-center mb-auto">
-          <h1 className="cover-text">Bienvenido</h1>
+          <h1 className="cover-text">Le damos la bienvenida</h1>
           <p className="lead cover-text">
             Livroo es una plataforma de lectura en línea, donde podrá disfrutar
             de una amplia variedad de libros en cualquier momento y lugar.

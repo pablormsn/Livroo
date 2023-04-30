@@ -77,7 +77,7 @@ export const Profile = () => {
                           <form className="d-flex" role="nombre">
                             <input
                               className="form-control me-2"
-                              type="nombre"
+                              type="text"
                               aria-label="nombre"
                               title="Nombre"
                             />
@@ -93,7 +93,7 @@ export const Profile = () => {
                           <form className="d-flex" role="apellidos">
                             <input
                               className="form-control me-2"
-                              type="apellidos"
+                              type="text"
                               aria-label="apellidos"
                               title="Apellidos"
                             />
@@ -156,7 +156,7 @@ export const Profile = () => {
                           <form className="d-flex" role="usuario">
                             <input
                               className="form-control me-2"
-                              type="usuario"
+                              type="text"
                               aria-label="usuario"
                               title="Usuario"
                             />
