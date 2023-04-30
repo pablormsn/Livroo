@@ -40,32 +40,28 @@ export default function Headerbar() {
             <img src={logo} alt="Livroo" width={64} height={32} />
           </a>
           <div className="nav col-12 col-lg-auto me-lg-auto mb-2 mb-md-0" />
-          <form
-            className="col col-lg-auto mb-3 mb-lg-0 me-lg-1"
-            style={{ marginRight: 10 }}
-            role="search"
-          >
-            <input
-              id="myInput"
-              type="search"
-              className="form-control"
-              placeholder="Buscar..."
-              aria-label="Buscar"
-              onChange={handleChange}
-              onKeyDown={handleKeyDown}
-              value={message}
-              title="Buscar"
-            />
+          <form className="col col-lg-auto mb-3 mb-lg-0 me-lg-1" role="search">
+            <div className="input-group">
+              <input
+                id="myInput"
+                type="search"
+                className="form-control"
+                placeholder="Buscar..."
+                aria-label="Buscar"
+                onChange={handleChange}
+                onKeyDown={handleKeyDown}
+                value={message}
+                title="Buscar"
+              />{" "}
+              <button
+                className="btn btn-outline-success"
+                type="submit"
+                onClick={handleClick}
+              >
+                <img src={lupa} alt="lupa" width={16} height={16} />
+              </button>
+            </div>
           </form>
-          <div style={{ marginLeft: 6, marginRight: 6 }}>
-            <a
-              href="#"
-              className="d-block link-dark text-decoration-none me-lg-2"
-              onClick={handleClick}
-            >
-              <img src={lupa} alt="lupa" width={16} height={16} />
-            </a>
-          </div>
           <div className="dropdown text-end">
             <a
               href="#"
