@@ -4,6 +4,16 @@ import logo from "./assets/Livroo.png";
 import Footer from "./components/Footer";
 
 export const Signin = () => {
+  function log(){
+    let b = document.getElementById("floatingRPassword").value;
+    let c = document.getElementById("floatingEmail").value;
+    if(b===null || b==="" || c===null || c===""){
+      document.getElementById("boton").disabled=true;
+    }
+    else{
+      document.getElementById("boton").disabled=false;
+    }
+  }
   return (
     <div className="signin-body text-center" style={{ height: "100vh" }}>
       <main className="form-signin w-100 m-auto">
@@ -28,6 +38,7 @@ export const Signin = () => {
               className="form-control bg-dark text-white"
               id="floatingEmail"
               placeholder="name@example.com"
+              onKeyDown={() => {log()}}
             />
             <label htmlFor="floatingInput" className="text-white">
               Correo electrónico
@@ -38,7 +49,8 @@ export const Signin = () => {
               type="password"
               className="form-control bg-dark text-white"
               id="floatingRPassword"
-              placeholder="Repeat password"
+              placeholder="Password"
+              onKeyDown={() => {log()}}
             />
             <label htmlFor="floatingPassword" className="text-white">
               Contraseña
@@ -48,8 +60,10 @@ export const Signin = () => {
             ¿Aún no tienes cuenta? Regístrate
           </a>
           <button
+          id="boton"
             className="w-100 btn btn-lg btn-primary bg-success border-success mt-2"
             type="submit"
+            disabled
           >
             Iniciar sesión
           </button>

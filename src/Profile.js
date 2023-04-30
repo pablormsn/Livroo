@@ -11,6 +11,20 @@ import Select from 'react-select'
 import countryList from 'react-select-country-list'
 
 export const Profile = () => {
+  
+  function texto(){
+    let a = document.getElementById("contra").value;
+    let b = document.getElementById("contraR").value;
+    if(a!==b){
+      document.getElementById("texto").innerHTML="Las contraseñas tienen que ser iguales";
+    }
+    if(a === null || a === "" || b === null || b === ""){
+      document.getElementById("texto").innerHTML="Los campos no pueden estar vacíos";
+    }
+  }
+
+
+
   const [date, setDate] = useState('');
   const dateInputRef = useRef(null);
   
@@ -169,6 +183,7 @@ export const Profile = () => {
                         <div className="col-sm-9">
                           <form className="d-flex" role="contrasena">
                             <input
+                            id="contra"
                               className="form-control me-2"
                               type="password"
                               aria-label="contrasena"
@@ -184,6 +199,7 @@ export const Profile = () => {
                         <div className="col-sm-9">
                           <form className="d-flex" role="ccontrasena">
                             <input
+                            id="contraR"
                               className="form-control me-2"
                               type="password"
                               aria-label="ccontrasena"
@@ -194,7 +210,7 @@ export const Profile = () => {
                     </div>
                   </div>
                   <div className="d-flex justify-content-center mb-2">
-                  <Popup
+                  <Popup onOpen={()=>texto()}
                         trigger={
                           <button
                             type="button"
@@ -206,7 +222,7 @@ export const Profile = () => {
                         }
                         position="top center"
                       >
-                        <div className="text-center">¡Contraseña cambiada con éxito!</div>
+                        <div id="texto" className="text-center">¡Contraseña cambiada con éxito!</div>
                       </Popup>
                   </div>
                 </div>
