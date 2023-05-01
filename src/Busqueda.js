@@ -191,7 +191,7 @@ export const Busqueda = () => {
                                                 src={imagen3}
                                                 alt="Card"
                                             />
-                                            <p className="titulos">Juegos 3</p>
+                                            <p className="titulos invisible">Juegos 3</p>
                                         </a>
                                     </div>
                                 </div>
