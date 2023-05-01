@@ -118,11 +118,12 @@ export const Profile = () => {
                           <p className="mb-0">País</p>
                         </div>
                         <div className="col-sm-9">
-                          <label for="pais" hidden>
+                          <label htmlFor="pais" hidden="hidden">
                             País
                           </label>
                           <Select
                             name="pais"
+                            id="pais"
                             options={options}
                             value={value}
                             onChange={changeHandler}
