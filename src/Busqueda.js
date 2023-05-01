@@ -186,8 +186,9 @@ export const Busqueda = () => {
                                         src={imagen3}
                                         alt="Card"
                                     />
-                                    <p className="titulos ">Juegos 3</p>
+
                                     <div className="card-img-overlay">
+                                        <p className="titulos">Juegos 3</p>
                                         <a href="infoSinsajo" className="stretched-link"/>
                                     </div>
                                 </div>
