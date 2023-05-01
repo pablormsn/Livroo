@@ -127,7 +127,7 @@ export const Busqueda = () => {
                                         </a>
                                         <ul className="dropdown-menu dropdown-menu-end">
                                             <li>
-                                                <a className="dropdown-item" href="#">
+                                                <a className="dropdown-item" href="/Livroo/busqueda">
                                                     {" "}
                                                     menos &lt; más (páginas){" "}
                                                 </a>
@@ -136,7 +136,7 @@ export const Busqueda = () => {
                                                 <hr className="dropdown-divider"/>
                                             </li>
                                             <li>
-                                                <a className="dropdown-item" href="#">
+                                                <a className="dropdown-item" href="/Livroo/busqueda">
                                                     {" "}
                                                     más &gt; menos (páginas)
                                                 </a>
