@@ -161,9 +161,7 @@ export const Busqueda = () => {
                                     <p>Juegos 1</p>
 
                                     <div className="card-img-overlay">
-                                        <a href="infoJuegos" className="stretched-link">
-
-                                        </a>
+                                        <a href="infoJuegos" className="stretched-link"/>
                                     </div>
                                 </div>
                             </div>
@@ -177,8 +175,7 @@ export const Busqueda = () => {
                                     />
                                     <p>Juegos 1</p>
                                     <div className="card-img-overlay">
-                                        <a href="infoLlamas" className="stretched-link">
-                                        </a>
+                                        <a href="infoLlamas" className="stretched-link"/>
                                     </div>
                                 </div>
                             </div>
@@ -191,11 +188,8 @@ export const Busqueda = () => {
                                         alt="Card"
                                     />
                                     <p>Juegos 1</p>
-
                                     <div className="card-img-overlay">
-                                        <a href="infoSinsajo" className="stretched-link">
-
-                                        </a>
+                                        <a href="infoSinsajo" className="stretched-link"/>
                                     </div>
                                 </div>
                             </div>
