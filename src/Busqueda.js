@@ -158,7 +158,7 @@ export const Busqueda = () => {
                                         src={imagen1}
                                         alt="Card"
                                     />
-                                  <p className="titulos invisible">Juegos 1</p>
+                                  <p className="titulos ">Juegos 1</p>
                                   <div className="card-img-overlay">
                                       <a href="infoJuegos" className="stretched-link"/>
                                   </div>
@@ -172,7 +172,7 @@ export const Busqueda = () => {
                                         src={imagen2}
                                         alt="Card"
                                     />
-                                    <p className="titulos invisible">Juegos 2</p>
+                                    <p className="titulos ">Juegos 2</p>
                                     <div className="card-img-overlay">
                                         <a href="infoLlamas" className="stretched-link"/>
                                     </div>
@@ -186,7 +186,7 @@ export const Busqueda = () => {
                                         src={imagen3}
                                         alt="Card"
                                     />
-                                    <p className="titulos invisible">Juegos 3</p>
+                                    <p className="titulos ">Juegos 3</p>
                                     <div className="card-img-overlay">
                                         <a href="infoSinsajo" className="stretched-link"/>
                                     </div>
