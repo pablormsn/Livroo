@@ -36,8 +36,8 @@ export default function Headerbar() {
     <header className="p-3 border-bottom">
       <div className="container-fluid">
         <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="home" className="navbar-brand">
-            <img src={logo} alt="Livroo" width={64} height={32} />
+          <a href="./home" className="navbar-brand">
+            <img src={logo} aria-label="Inicio" width={64} height={32} />
           </a>
           <div className="nav col-12 col-lg-auto me-lg-auto mb-2 mb-md-0" />
           <form className="col col-lg-auto mb-3 mb-lg-0 me-lg-1" role="search">
@@ -47,7 +47,7 @@ export default function Headerbar() {
                 type="search"
                 className="form-control"
                 placeholder="Buscar..."
-                aria-label="Buscar"
+                aria-label="Barra de búsqueda"
                 onChange={handleChange}
                 onKeyDown={handleKeyDown}
                 value={message}
@@ -79,7 +79,7 @@ export default function Headerbar() {
             </a>
             <ul className="dropdown-menu text-small">
               <li>
-                <a className="dropdown-item" href="profile">
+                <a className="dropdown-item" href="./profile">
                   Perfil
                 </a>
               </li>
@@ -87,7 +87,7 @@ export default function Headerbar() {
                 <hr className="dropdown-divider" />
               </li>
               <li>
-                <a className="dropdown-item" href="/">
+                <a className="dropdown-item" href="./">
                   Cerrar sesión
                 </a>
               </li>

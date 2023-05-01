@@ -12,7 +12,7 @@ export const InfoJuegos = () => {
       <div className="infoLibro-body">
         <div className="container">
           <p style={{ fontSize: "large" }}>
-            <a className="link" href="home">
+            <a className="link" href="./home">
               Libros
             </a>{" "}
             &gt; Los Juegos Del Hambre
@@ -22,7 +22,11 @@ export const InfoJuegos = () => {
           <div className="row">
             <div className="col">
               <div className="card align-items-center" style={{ border: 0 }}>
-                <img id="portada" src={port} alt="Not found" />
+                <img
+                  id="portada"
+                  src={port}
+                  aria-label="Portada del libro Los Juegos del Hambre"
+                />
                 <div style={{ marginTop: 20, marginBottom: 50 }}>
                   <button
                     className="btn btn-primary bg-success border-success"
@@ -84,7 +88,7 @@ export const InfoJuegos = () => {
                 <h4>
                   <a>Suzanne Collins</a>
                   <a> </a>
-                  <a className="link" href="biography">
+                  <a className="link" href="./biography">
                     <i>
                       <span className="fs-6">(Saber más)</span>
                     </i>

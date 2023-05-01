@@ -58,42 +58,35 @@ export const Biography = () => {
           <div className="row row-cols-2 row-cols-sm-3 row-cols-md-6 g-3 d-flex justify-content-center">
             <div className="col">
               <div className="card">
-                <a href="infoJuegos">
+                <a href="./infoJuegos">
                   <img
                     src={libro1}
                     className="d-block w-100 card-img-top zoom"
-                    alt="Not found"
+                    aria-label="Los Juegos del Hambre"
                   />
                 </a>
-                <span className="visually-hidden">Los Juegos del Hambre</span>
               </div>
             </div>
             <div className="col">
               <div className="card">
-                <a href="infoLlamas">
+                <a href="./infoLlamas">
                   <img
                     src={libro2}
                     className="d-block w-100 card-img-top zoom"
-                    alt="Not found"
+                    aria-label="Los juegos del hambre: En Llamas"
                   />
                 </a>
-                <span className="visually-hidden">
-                  Los juegos del hambre: En Llamas
-                </span>
               </div>
             </div>
             <div className="col">
               <div className="card">
-                <a href="infoSinsajo">
+                <a href="./infoSinsajo">
                   <img
                     src={libro3}
                     className="d-block w-100 card-img-top zoom"
-                    alt="Not found"
+                    aria-label="Los Juegos del Hambre: Sinsajo"
                   />
                 </a>
-                <span className="visually-hidden">
-                  Los Juegos del Hambre: Sinsajo
-                </span>
               </div>
             </div>
           </div>

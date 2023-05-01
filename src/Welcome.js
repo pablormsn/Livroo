@@ -8,17 +8,17 @@ function Welcome() {
       <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <header className="mb-5">
           <div>
-            <a href="/">
+            <a href="./">
               <img
                 src={logo}
-                alt="Logo not found"
                 width={100}
                 height={48}
+                aria-label="Inicio"
                 aria-current="page"
               />
             </a>
             <nav className="nav nav-masthead justify-content-center float-md-end">
-              <a className="nav-link fw-bold py-1 px-0" href="signin">
+              <a className="nav-link fw-bold py-1 px-0" href="./signin">
                 Iniciar sesión
               </a>
             </nav>
@@ -32,7 +32,7 @@ function Welcome() {
           </p>
           <p className="lead">
             <a
-              href="signup"
+              href="./signup"
               className="btn btn-lg btn-secondary fw-bold border-white bg-white"
             >
               Registrarse

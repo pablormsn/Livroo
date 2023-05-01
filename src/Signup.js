@@ -43,7 +43,7 @@ export const Signup = () => {
             onSubmit(e);
           }}
         >
-          <a href="/">
+          <a href="./">
             <img
               className="mb-4"
               src={logo}
@@ -98,7 +98,7 @@ export const Signup = () => {
               Repite la contraseña
             </label>
           </div>
-          <a href="signin" className="text-success">
+          <a href="./signin" className="text-success">
             ¿Ya tienes una cuenta? Inicia sesión
           </a>
           <button

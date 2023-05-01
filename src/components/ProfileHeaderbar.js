@@ -7,7 +7,7 @@ export default function ProfileHeaderbar() {
     <header className="p-3 border-bottom">
       <div className="container-fluid">
         <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="home" className="navbar-brand">
+          <a href="./home" className="navbar-brand">
             <img src={logo} alt="Livroo" width={64} height={32} />
           </a>
           <div className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" />
@@ -28,7 +28,7 @@ export default function ProfileHeaderbar() {
             </a>
             <ul className="dropdown-menu text-small">
               <li>
-                <a className="dropdown-item" href="profile">
+                <a className="dropdown-item" href="./profile">
                   Perfil
                 </a>
               </li>
@@ -36,7 +36,7 @@ export default function ProfileHeaderbar() {
                 <hr className="dropdown-divider" />
               </li>
               <li>
-                <a className="dropdown-item" href="/">
+                <a className="dropdown-item" href="./">
                   Cerrar sesión
                 </a>
               </li>

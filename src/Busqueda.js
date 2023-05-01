@@ -114,7 +114,7 @@ export const Busqueda = () => {
                     className="nav justify-content-center float-md-end"
                   >
                     <a
-                      href="/busqueda"
+                      href="./busqueda"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
@@ -131,7 +131,7 @@ export const Busqueda = () => {
                     </a>
                     <ul className="dropdown-menu dropdown-menu-end">
                       <li>
-                        <a className="dropdown-item" href="/busqueda">
+                        <a className="dropdown-item" href="./busqueda">
                           {" "}
                           menos &lt; más (páginas){" "}
                         </a>
@@ -140,7 +140,7 @@ export const Busqueda = () => {
                         <hr className="dropdown-divider" />
                       </li>
                       <li>
-                        <a className="dropdown-item" href="/busqueda">
+                        <a className="dropdown-item" href="./busqueda">
                           {" "}
                           más &gt; menos (páginas)
                         </a>
@@ -157,7 +157,7 @@ export const Busqueda = () => {
               <div className="col">
                 <div className="card border-0 text-white">
                   <div className="card-img-overlay">
-                    <a href="infoJuegos" className="stretched-link">
+                    <a href="./infoJuegos" className="stretched-link">
                       <img
                         id="Los Juegos Del Hambre"
                         className="card-img"
@@ -172,7 +172,7 @@ export const Busqueda = () => {
               <div className="col">
                 <div className="card border-0 text-white">
                   <div className="card-img-overlay">
-                    <a href="infoLlamas" className="stretched-link">
+                    <a href="./infoLlamas" className="stretched-link">
                       <img
                         id="Los Juegos Del Hambre En Llamas"
                         className="card-img"
@@ -187,7 +187,7 @@ export const Busqueda = () => {
               <div className="col">
                 <div className="card border-0 text-white">
                   <div className="card-img-overlay">
-                    <a href="infoSinsajo" className="stretched-link">
+                    <a href="./infoSinsajo" className="stretched-link">
                       <img
                         id="Los Juegos Del Hambre Sinsajo"
                         className="card-img"
