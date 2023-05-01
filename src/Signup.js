@@ -6,25 +6,30 @@ import { useNavigate } from "react-router-dom";
 
 export const Signup = () => {
   const navigate = useNavigate();
-  function log(){
+  function log() {
     let a = document.getElementById("floatingPassword").value;
     let b = document.getElementById("floatingRPassword").value;
     let c = document.getElementById("floatingEmail").value;
-    if(a===null || a==="" || b===null || b==="" || c===null || c===""){
-      document.getElementById("boton").disabled=true;
-    }
-    else{
-      document.getElementById("boton").disabled=false;
+    if (
+      a === null ||
+      a === "" ||
+      b === null ||
+      b === "" ||
+      c === null ||
+      c === ""
+    ) {
+      document.getElementById("boton").disabled = true;
+    } else {
+      document.getElementById("boton").disabled = false;
     }
   }
-  function onSubmit(event){
+  function onSubmit(event) {
     event.preventDefault();
     let a = document.getElementById("floatingPassword").value;
     let b = document.getElementById("floatingRPassword").value;
-    if(a!==b){
+    if (a !== b) {
       alert("Las contraseñas tienen que coincidir");
-    }
-    else{
+    } else {
       navigate("/home");
     }
   }
@@ -33,12 +38,12 @@ export const Signup = () => {
     <div className="signin-body text-center" style={{ height: "100vh" }}>
       <main className="form-signin w-100 m-auto">
         <form
-          //action="home"
-          //method="get"
           className="container bg-dark p-3 rounded-5 bg-opacity-75"
-          onSubmit={e=>{onSubmit(e)}}
+          onSubmit={(e) => {
+            onSubmit(e);
+          }}
         >
-          <a href="/">
+          <a href="/Livroo/">
             <img
               className="mb-4"
               src={logo}
@@ -55,7 +60,9 @@ export const Signup = () => {
               className="form-control bg-dark text-white"
               id="floatingEmail"
               placeholder="name@example.com"
-              onKeyDown={() => {log()}}
+              onKeyDown={() => {
+                log();
+              }}
             />
             <label htmlFor="floatingInput" className="text-white">
               Correo electrónico
@@ -68,7 +75,9 @@ export const Signup = () => {
               className="form-control bg-dark text-white"
               id="floatingPassword"
               placeholder="Password"
-              onKeyDown={() => {log()}}
+              onKeyDown={() => {
+                log();
+              }}
             />
             <label htmlFor="floatingPassword" className="text-white">
               Contraseña
@@ -81,7 +90,9 @@ export const Signup = () => {
               className="form-control bg-dark text-white"
               id="floatingRPassword"
               placeholder="Repeat password"
-              onKeyDown={() => {log()}}
+              onKeyDown={() => {
+                log();
+              }}
             />
             <label htmlFor="floatingPassword" className="text-white">
               Repite la contraseña

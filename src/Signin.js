@@ -4,14 +4,13 @@ import logo from "./assets/Livroo.png";
 import Footer from "./components/Footer";
 
 export const Signin = () => {
-  function log(){
+  function log() {
     let b = document.getElementById("floatingRPassword").value;
     let c = document.getElementById("floatingEmail").value;
-    if(b===null || b==="" || c===null || c===""){
-      document.getElementById("boton").disabled=true;
-    }
-    else{
-      document.getElementById("boton").disabled=false;
+    if (b === null || b === "" || c === null || c === "") {
+      document.getElementById("boton").disabled = true;
+    } else {
+      document.getElementById("boton").disabled = false;
     }
   }
   return (
@@ -22,7 +21,7 @@ export const Signin = () => {
           method="get"
           className="container bg-dark p-3 rounded-5 bg-opacity-75"
         >
-          <a href="/">
+          <a href="/Livroo/">
             <img
               className="mb-4"
               src={logo}
@@ -32,14 +31,16 @@ export const Signin = () => {
             />
           </a>
           <h1 className="h3 mb-3 fw-normal text-white">Complete los campos</h1>
-          <div className="form-floating" >
+          <div className="form-floating">
             <input
               title="Correo electrónico"
               type="email"
               className="form-control bg-dark text-white"
               id="floatingEmail"
               placeholder="name@example.com"
-              onKeyDown={() => {log()}}
+              onKeyDown={() => {
+                log();
+              }}
             />
             <label htmlFor="floatingInput" className="text-white">
               Correo electrónico
@@ -52,7 +53,9 @@ export const Signin = () => {
               className="form-control bg-dark text-white"
               id="floatingRPassword"
               placeholder="Password"
-              onKeyDown={() => {log()}}
+              onKeyDown={() => {
+                log();
+              }}
             />
             <label htmlFor="floatingPassword" className="text-white">
               Contraseña
@@ -62,7 +65,7 @@ export const Signin = () => {
             ¿Aún no tienes cuenta? Regístrate
           </a>
           <button
-          id="boton"
+            id="boton"
             className="w-100 btn btn-lg btn-primary bg-success border-success mt-2"
             type="submit"
             disabled

@@ -87,7 +87,7 @@ export default function Headerbar() {
                 <hr className="dropdown-divider" />
               </li>
               <li>
-                <a className="dropdown-item" href="/">
+                <a className="dropdown-item" href="/Livroo/">
                   Cerrar sesión
                 </a>
               </li>
