@@ -182,15 +182,16 @@ export const Busqueda = () => {
                             </div>
                             <div className="col">
                                 <div className="card border-0 text-white">
-                                    <img
-                                        id="Los Juegos Del Hambre Sinsajo"
-                                        className="card-img"
-                                        src={imagen3}
-                                        alt="Card"
-                                    />
-                                    <p className="titulos">Juegos 3</p>
                                     <div className="card-img-overlay">
-                                        <a href="infoSinsajo" className="stretched-link"/>
+                                        <a href="infoSinsajo" className="stretched-link">
+                                            <img
+                                                id="Los Juegos Del Hambre Sinsajo"
+                                                className="card-img"
+                                                src={imagen3}
+                                                alt="Card"
+                                            />
+                                            <p className="titulos">Juegos 3</p>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
