@@ -42,8 +42,8 @@ export const Profile = () => {
       <Headerbar />
       <div className="d-flex h-100 p-3 mx-auto flex-column justify-content-center">
         <main>
-          <h1>Tu perfil</h1>
           <div className="d-flex container h-100">
+            <h1>Tu perfil</h1>
             <div className="d-flex container w-100 h-100 p-3 mx-auto flex-column">
               <div className="row">
                 <div className="col-lg-4">
