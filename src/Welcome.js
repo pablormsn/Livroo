@@ -8,7 +8,7 @@ function Welcome() {
       <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <header className="mb-5">
           <div>
-            <a href="/Livroo/">
+            <a href="/">
               <img
                 src={logo}
                 alt="Logo not found"

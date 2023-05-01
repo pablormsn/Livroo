@@ -21,7 +21,7 @@ export const Signin = () => {
           method="get"
           className="container bg-dark p-3 rounded-5 bg-opacity-75"
         >
-          <a href="/Livroo/">
+          <a href="/">
             <img
               className="mb-4"
               src={logo}

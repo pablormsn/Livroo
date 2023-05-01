@@ -43,7 +43,7 @@ export const Signup = () => {
             onSubmit(e);
           }}
         >
-          <a href="/Livroo/">
+          <a href="/">
             <img
               className="mb-4"
               src={logo}

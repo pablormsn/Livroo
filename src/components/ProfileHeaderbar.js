@@ -36,7 +36,7 @@ export default function ProfileHeaderbar() {
                 <hr className="dropdown-divider" />
               </li>
               <li>
-                <a className="dropdown-item" href="/Livroo/">
+                <a className="dropdown-item" href="/">
                   Cerrar sesión
                 </a>
               </li>
