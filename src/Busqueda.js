@@ -148,45 +148,45 @@ export const Busqueda = () => {
                         </div>
                     </div>
                     <div className="text-center" id="not-found"></div>
-                    <div className="container busqueda-album">
+                    <div className="container busqueda-album ">
                         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 d-flex justify-content-center">
                             <div className="col">
-                                <div className="card bg-dark text-white">
-                                  <div className="card-img-overlay">
+                                <div className="card border-0 text-white">
                                     <img
                                         id="Los Juegos Del Hambre"
                                         className="card-img"
                                         src={imagen1}
                                         alt="Card"
                                     />
+                                  <p className="titulos invisible">Juegos 1</p>
+                                  <div className="card-img-overlay">
+                                      <a href="infoJuegos" className="stretched-link"/>
                                   </div>
                                 </div>
-                                    <p>Juegos 1</p>
-                                        <a href="infoJuegos" className="stretched-link"/>
                             </div>
                             <div className="col">
-                                <div className="card bg-dark text-white">
+                                <div className="card border-0 text-white">
                                     <img
                                         id="Los Juegos Del Hambre En Llamas"
                                         className="card-img"
                                         src={imagen2}
                                         alt="Card"
                                     />
-                                    <p>Juegos 2</p>
+                                    <p className="titulos invisible">Juegos 2</p>
                                     <div className="card-img-overlay">
                                         <a href="infoLlamas" className="stretched-link"/>
                                     </div>
                                 </div>
                             </div>
                             <div className="col">
-                                <div className="card bg-dark text-white">
+                                <div className="card border-0 text-white">
                                     <img
                                         id="Los Juegos Del Hambre Sinsajo"
                                         className="card-img"
                                         src={imagen3}
                                         alt="Card"
                                     />
-                                    <p>Juegos 3</p>
+                                    <p className="titulos invisible">Juegos 3</p>
                                     <div className="card-img-overlay">
                                         <a href="infoSinsajo" className="stretched-link"/>
                                     </div>
