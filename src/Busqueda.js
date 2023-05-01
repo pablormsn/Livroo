@@ -161,6 +161,7 @@ export const Busqueda = () => {
                           src={imagen1}
                           alt="Card"
                       />
+                      <p>Juegos 1</p>
                     </a>
                   </div>
                 </div>
@@ -175,6 +176,7 @@ export const Busqueda = () => {
                           src={imagen2}
                           alt="Card"
                       />
+                      <p>Juegos 1</p>
                     </a>
                   </div>
                 </div>
@@ -190,6 +192,7 @@ export const Busqueda = () => {
                         src={imagen3}
                         alt="Card"
                     />
+                      <p>Juegos 1</p>
                     </a>
                   </div>
                 </div>
