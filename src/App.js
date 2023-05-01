@@ -6,7 +6,6 @@ import Signup from "./Signup";
 import Home from "./Home";
 import Busqueda from "./Busqueda";
 import Profile from "./Profile";
-import Library from "./Library";
 import InfoJuegos from "./InfoJuegos";
 import InfoLlamas from "./InfoLlamas";
 import InfoSinsajo from "./InfoSinsajo";
@@ -21,7 +20,6 @@ function App() {
       <Route path="/home" element={<Home />} />
       <Route path="/busqueda" element={<Busqueda />} />
       <Route path="/profile" element={<Profile />} />
-      <Route path="/library" element={<Library />} />
       <Route path="/infoJuegos" element={<InfoJuegos />} />
       <Route path="/infoLlamas" element={<InfoLlamas />} />
       <Route path="/infoSinsajo" element={<InfoSinsajo />} />
