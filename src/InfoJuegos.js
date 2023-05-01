@@ -82,13 +82,11 @@ export const InfoJuegos = () => {
                   Los Juegos del Hambre{" "}
                 </h2>
                 <h4>
-                  <a>
-                    Suzanne Collins 
-                  </a>
+                  <a>Suzanne Collins</a>
                   <a> </a>
                   <a className="link" href="biography">
                     <i>
-                      <font size = "3">(Saber más)</font>
+                      <span className="fs-6">(Saber más)</span>
                     </i>
                   </a>
                 </h4>

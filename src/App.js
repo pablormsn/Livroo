@@ -1,47 +1,32 @@
-import logo from "./assets/Livroo.png";
-import "./assets/App.css";
-import Footer from "./components/Footer";
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Welcome from "./Welcome";
+import Signin from "./Signin";
+import Signup from "./Signup";
+import Home from "./Home";
+import Busqueda from "./Busqueda";
+import Profile from "./Profile";
+import Library from "./Library";
+import InfoJuegos from "./InfoJuegos";
+import InfoLlamas from "./InfoLlamas";
+import InfoSinsajo from "./InfoSinsajo";
+import Biography from "./Biography";
 
 function App() {
   return (
-    <div className="app-body" style={{ height: "100vh" }}>
-      <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-        <header className="mb-5">
-          <div>
-            <a href="/">
-              <img
-                src={logo}
-                alt="Logo not found"
-                width={100}
-                height={48}
-                aria-current="page"
-              />
-            </a>
-            <nav className="nav nav-masthead justify-content-center float-md-end">
-              <a className="nav-link fw-bold py-1 px-0" href="signin">
-                Iniciar sesión
-              </a>
-            </nav>
-          </div>
-        </header>
-        <main className="px-3 mt-5 text-center mb-auto">
-          <h1 className="cover-text">Le damos la bienvenida</h1>
-          <p className="lead cover-text">
-            Livroo es una plataforma de lectura en línea, donde podrá disfrutar
-            de una amplia variedad de libros en cualquier momento y lugar.
-          </p>
-          <p className="lead">
-            <a
-              href="signup"
-              className="btn btn-lg btn-secondary fw-bold border-white bg-white"
-            >
-              Registrarse
-            </a>
-          </p>
-        </main>
-        <Footer />
-      </div>
-    </div>
+    <Routes>
+      <Route path="/" element={<Welcome />} />
+      <Route path="/signin" element={<Signin />} />
+      <Route path="/signup" element={<Signup />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/busqueda" element={<Busqueda />} />
+      <Route path="/profile" element={<Profile />} />
+      <Route path="/library" element={<Library />} />
+      <Route path="/infoJuegos" element={<InfoJuegos />} />
+      <Route path="/infoLlamas" element={<InfoLlamas />} />
+      <Route path="/infoSinsajo" element={<InfoSinsajo />} />
+      <Route path="/biography" element={<Biography />} />
+    </Routes>
   );
 }
 

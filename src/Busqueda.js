@@ -95,10 +95,11 @@ export const Busqueda = () => {
                   className="form-control"
                   type="search"
                   placeholder="Buscar"
-                  aria-label="Search"
                   onChange={handleChange}
                   onKeyDown={handleKeyDown}
                   value={message}
+                  aria-label="Buscar"
+                  title="Buscar"
                 />
                 <div className="card-body d-flex justify-content-between align-items-center">
                   <a
