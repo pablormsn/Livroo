@@ -43,8 +43,8 @@ export const Profile = () => {
       <div className="d-flex h-100 p-3 mx-auto flex-column justify-content-center">
         <main>
           <div className="d-flex container h-100">
-            <h1>Tu perfil</h1>
             <div className="d-flex container w-100 h-100 p-3 mx-auto flex-column">
+              <h1>Tu perfil</h1>
               <div className="row">
                 <div className="col-lg-4">
                   <div className="card mb-4">
