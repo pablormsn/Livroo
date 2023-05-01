@@ -123,7 +123,7 @@ export const Profile = () => {
                             onChange={changeHandler}
                             className="me-2"
                             placeholder="Seleccionar..."
-                            title="País"
+                            inputProps={{ title: "País" }}
                           />
                         </div>
                       </div>
