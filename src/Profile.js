@@ -74,7 +74,7 @@ export const Profile = () => {
                           <p className="mb-0">Nombre</p>
                         </div>
                         <div className="col-sm-9">
-                          <form className="d-flex" role="nombre">
+                          <form className="d-flex">
                             <input
                               className="form-control me-2"
                               type="text"
@@ -90,7 +90,7 @@ export const Profile = () => {
                           <p className="mb-0">Apellidos</p>
                         </div>
                         <div className="col-sm-9">
-                          <form className="d-flex" role="apellidos">
+                          <form className="d-flex">
                             <input
                               className="form-control me-2"
                               type="text"
@@ -128,6 +128,8 @@ export const Profile = () => {
                             value={value}
                             onChange={changeHandler}
                             className="me-2"
+                            placeholder="Seleccionar..."
+                            title="País"
                           />
                         </div>
                       </div>
@@ -137,7 +139,7 @@ export const Profile = () => {
                           <p className="mb-0">Correo electrónico</p>
                         </div>
                         <div className="col-sm-9">
-                          <form className="d-flex" role="email">
+                          <form className="d-flex">
                             <input
                               className="form-control me-2"
                               type="email"
@@ -153,7 +155,7 @@ export const Profile = () => {
                           <p className="mb-0">Usuario</p>
                         </div>
                         <div className="col-sm-9">
-                          <form className="d-flex" role="usuario">
+                          <form className="d-flex">
                             <input
                               className="form-control me-2"
                               type="text"
@@ -190,7 +192,7 @@ export const Profile = () => {
                           <p className="mb-0">Contraseña</p>
                         </div>
                         <div className="col-sm-9">
-                          <form className="d-flex" role="contrasena">
+                          <form className="d-flex">
                             <input
                               id="contra"
                               className="form-control me-2"
@@ -207,7 +209,7 @@ export const Profile = () => {
                           <p className="mb-0">Repetir contaseña</p>
                         </div>
                         <div className="col-sm-9">
-                          <form className="d-flex" role="ccontrasena">
+                          <form className="d-flex">
                             <input
                               id="contraR"
                               className="form-control me-2"
