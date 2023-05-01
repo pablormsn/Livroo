@@ -123,7 +123,7 @@ export const Profile = () => {
                             onChange={changeHandler}
                             className="me-2"
                             placeholder="Seleccionar..."
-                            inputProps={{ title: "País" }}
+                            aria-label="País"
                           />
                         </div>
                       </div>
