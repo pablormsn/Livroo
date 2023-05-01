@@ -118,14 +118,17 @@ export const Profile = () => {
                           <p className="mb-0">País</p>
                         </div>
                         <div className="col-sm-9">
+                          <label for="pais" hidden>
+                            País
+                          </label>
                           <Select
+                            name="pais"
                             options={options}
                             value={value}
                             onChange={changeHandler}
                             className="me-2"
                             placeholder="Seleccionar..."
                             aria-label="País"
-                            title="País"
                           />
                         </div>
                       </div>
