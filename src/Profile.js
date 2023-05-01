@@ -77,7 +77,7 @@ export const Profile = () => {
                           <input
                             className="form-control me-2"
                             type="text"
-                            aria-label="nombre"
+                            aria-label="Nombre"
                             title="Nombre"
                           />
                         </div>
@@ -91,7 +91,7 @@ export const Profile = () => {
                           <input
                             className="form-control me-2"
                             type="text"
-                            aria-label="apellidos"
+                            aria-label="Apellidos"
                             title="Apellidos"
                           />
                         </div>
@@ -107,6 +107,7 @@ export const Profile = () => {
                             onChange={handleChange}
                             ref={dateInputRef}
                             className="form-control me-2"
+                            aria-label="Fecha de nacimiento"
                             title="Fecha de nacimiento"
                           />
                         </div>
@@ -124,6 +125,7 @@ export const Profile = () => {
                             className="me-2"
                             placeholder="Seleccionar..."
                             aria-label="País"
+                            title="País"
                           />
                         </div>
                       </div>
@@ -136,7 +138,7 @@ export const Profile = () => {
                           <input
                             className="form-control me-2"
                             type="email"
-                            aria-label="email"
+                            aria-label="Correo electrónico"
                             title="Correo electrónico"
                           />
                         </div>
@@ -150,7 +152,7 @@ export const Profile = () => {
                           <input
                             className="form-control me-2"
                             type="text"
-                            aria-label="usuario"
+                            aria-label="Usuario"
                             title="Usuario"
                           />
                         </div>
@@ -186,7 +188,7 @@ export const Profile = () => {
                             id="contra"
                             className="form-control me-2"
                             type="password"
-                            aria-label="contrasena"
+                            aria-label="Contraseña"
                             title="Contraseña"
                           />
                         </div>
@@ -201,7 +203,7 @@ export const Profile = () => {
                             id="contraR"
                             className="form-control me-2"
                             type="password"
-                            aria-label="ccontrasena"
+                            aria-label="Repetir contraseña"
                             title="Repetir contraseña"
                           />
                         </div>
