@@ -74,14 +74,12 @@ export const Profile = () => {
                           <p className="mb-0">Nombre</p>
                         </div>
                         <div className="col-sm-9">
-                          <form className="d-flex">
-                            <input
-                              className="form-control me-2"
-                              type="text"
-                              aria-label="nombre"
-                              title="Nombre"
-                            />
-                          </form>
+                          <input
+                            className="me-2"
+                            type="text"
+                            aria-label="nombre"
+                            title="Nombre"
+                          />
                         </div>
                       </div>
                       <hr />
@@ -90,14 +88,12 @@ export const Profile = () => {
                           <p className="mb-0">Apellidos</p>
                         </div>
                         <div className="col-sm-9">
-                          <form className="d-flex">
-                            <input
-                              className="form-control me-2"
-                              type="text"
-                              aria-label="apellidos"
-                              title="Apellidos"
-                            />
-                          </form>
+                          <input
+                            className="me-2"
+                            type="text"
+                            aria-label="apellidos"
+                            title="Apellidos"
+                          />
                         </div>
                       </div>
                       <hr />
@@ -106,15 +102,13 @@ export const Profile = () => {
                           <p className="mb-0">Fecha de nacimiento</p>
                         </div>
                         <div className="col-sm-9">
-                          <div className="d-flex">
-                            <input
-                              type="date"
-                              onChange={handleChange}
-                              ref={dateInputRef}
-                              className="form-control me-2"
-                              title="Fecha de nacimiento"
-                            />
-                          </div>
+                          <input
+                            type="date"
+                            onChange={handleChange}
+                            ref={dateInputRef}
+                            className="me-2"
+                            title="Fecha de nacimiento"
+                          />
                         </div>
                       </div>
                       <hr />
@@ -139,14 +133,12 @@ export const Profile = () => {
                           <p className="mb-0">Correo electrónico</p>
                         </div>
                         <div className="col-sm-9">
-                          <form className="d-flex">
-                            <input
-                              className="form-control me-2"
-                              type="email"
-                              aria-label="email"
-                              title="Correo electrónico"
-                            />
-                          </form>
+                          <input
+                            className="me-2"
+                            type="email"
+                            aria-label="email"
+                            title="Correo electrónico"
+                          />
                         </div>
                       </div>
                       <hr />
@@ -155,14 +147,12 @@ export const Profile = () => {
                           <p className="mb-0">Usuario</p>
                         </div>
                         <div className="col-sm-9">
-                          <form className="d-flex">
-                            <input
-                              className="form-control me-2"
-                              type="text"
-                              aria-label="usuario"
-                              title="Usuario"
-                            />
-                          </form>
+                          <input
+                            className="me-2"
+                            type="text"
+                            aria-label="usuario"
+                            title="Usuario"
+                          />
                         </div>
                       </div>
                     </div>
@@ -192,15 +182,13 @@ export const Profile = () => {
                           <p className="mb-0">Contraseña</p>
                         </div>
                         <div className="col-sm-9">
-                          <form className="d-flex">
-                            <input
-                              id="contra"
-                              className="form-control me-2"
-                              type="password"
-                              aria-label="contrasena"
-                              title="Contraseña"
-                            />
-                          </form>
+                          <input
+                            id="contra"
+                            className="me-2"
+                            type="password"
+                            aria-label="contrasena"
+                            title="Contraseña"
+                          />
                         </div>
                       </div>
                       <hr />
@@ -209,15 +197,13 @@ export const Profile = () => {
                           <p className="mb-0">Repetir contaseña</p>
                         </div>
                         <div className="col-sm-9">
-                          <form className="d-flex">
-                            <input
-                              id="contraR"
-                              className="form-control me-2"
-                              type="password"
-                              aria-label="ccontrasena"
-                              title="Repetir contraseña"
-                            />
-                          </form>
+                          <input
+                            id="contraR"
+                            className="me-2"
+                            type="password"
+                            aria-label="ccontrasena"
+                            title="Repetir contraseña"
+                          />
                         </div>
                       </div>
                     </div>
