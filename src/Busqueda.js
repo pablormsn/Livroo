@@ -152,6 +152,7 @@ export const Busqueda = () => {
                         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 d-flex justify-content-center">
                             <div className="col">
                                 <div className="card bg-dark text-white">
+                                  <div className="card-img-overlay">
                                     <img
                                         id="Los Juegos Del Hambre"
                                         className="card-img"
@@ -160,7 +161,6 @@ export const Busqueda = () => {
                                     />
                                     <p>Juegos 1</p>
 
-                                    <div className="card-img-overlay">
                                         <a href="infoJuegos" className="stretched-link"/>
                                     </div>
                                 </div>
@@ -173,7 +173,7 @@ export const Busqueda = () => {
                                         src={imagen2}
                                         alt="Card"
                                     />
-                                    <p>Juegos 1</p>
+                                    <p>Juegos 2</p>
                                     <div className="card-img-overlay">
                                         <a href="infoLlamas" className="stretched-link"/>
                                     </div>
@@ -187,7 +187,7 @@ export const Busqueda = () => {
                                         src={imagen3}
                                         alt="Card"
                                     />
-                                    <p>Juegos 1</p>
+                                    <p>Juegos 3</p>
                                     <div className="card-img-overlay">
                                         <a href="infoSinsajo" className="stretched-link"/>
                                     </div>
