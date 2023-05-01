@@ -72,7 +72,7 @@ export const Profile = () => {
                     <div className="card-body">
                       <div className="row">
                         <div className="col-sm-3">
-                          <label className="mb-0">Nombre</label>
+                          <p className="mb-0">Nombre</p>
                         </div>
                         <div className="col-sm-9">
                           <input
@@ -86,7 +86,7 @@ export const Profile = () => {
                       <hr />
                       <div className="row">
                         <div className="col-sm-3">
-                          <label className="mb-0">Apellidos</label>
+                          <p className="mb-0">Apellidos</p>
                         </div>
                         <div className="col-sm-9">
                           <input
@@ -100,7 +100,7 @@ export const Profile = () => {
                       <hr />
                       <div className="row">
                         <div className="col-sm-3">
-                          <label className="mb-0">Fecha de nacimiento</label>
+                          <p className="mb-0">Fecha de nacimiento</p>
                         </div>
                         <div className="col-sm-9">
                           <input
@@ -116,7 +116,7 @@ export const Profile = () => {
                       <hr />
                       <div className="row">
                         <div className="col-sm-3">
-                          <label className="mb-0">País</label>
+                          <p className="mb-0">País</p>
                         </div>
                         <div className="col-sm-9">
                           <Select
@@ -133,7 +133,7 @@ export const Profile = () => {
                       <hr />
                       <div className="row">
                         <div className="col-sm-3">
-                          <label className="mb-0">Correo electrónico</label>
+                          <p className="mb-0">Correo electrónico</p>
                         </div>
                         <div className="col-sm-9">
                           <input
@@ -147,7 +147,7 @@ export const Profile = () => {
                       <hr />
                       <div className="row">
                         <div className="col-sm-3">
-                          <label className="mb-0">Usuario</label>
+                          <p className="mb-0">Usuario</p>
                         </div>
                         <div className="col-sm-9">
                           <input
@@ -182,7 +182,7 @@ export const Profile = () => {
                     <div className="card-body">
                       <div className="row">
                         <div className="col-sm-3">
-                          <label className="mb-0">Contraseña</label>
+                          <p className="mb-0">Contraseña</p>
                         </div>
                         <div className="col-sm-9">
                           <input
@@ -197,7 +197,7 @@ export const Profile = () => {
                       <hr />
                       <div className="row">
                         <div className="col-sm-3">
-                          <label className="mb-0">Repetir contaseña</label>
+                          <p className="mb-0">Repetir contaseña</p>
                         </div>
                         <div className="col-sm-9">
                           <input
