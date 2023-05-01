@@ -166,15 +166,17 @@ export const Busqueda = () => {
                             </div>
                             <div className="col">
                                 <div className="card border-0 text-white">
-                                    <img
-                                        id="Los Juegos Del Hambre En Llamas"
-                                        className="card-img"
-                                        src={imagen2}
-                                        alt="Card"
-                                    />
-                                    <p className="titulos ">Juegos 2</p>
+
                                     <div className="card-img-overlay">
-                                        <a href="infoLlamas" className="stretched-link"/>
+                                        <a href="infoLlamas" className="stretched-link">
+                                        <img
+                                            id="Los Juegos Del Hambre En Llamas"
+                                            className="card-img"
+                                            src={imagen2}
+                                            alt="Card"
+                                        />
+                                        <p className="titulos ">Juegos 2</p>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -186,9 +188,8 @@ export const Busqueda = () => {
                                         src={imagen3}
                                         alt="Card"
                                     />
-
+                                    <p className="titulos">Juegos 3</p>
                                     <div className="card-img-overlay">
-                                        <p className="titulos">Juegos 3</p>
                                         <a href="infoSinsajo" className="stretched-link"/>
                                     </div>
                                 </div>
