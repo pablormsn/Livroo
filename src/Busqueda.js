@@ -160,9 +160,9 @@ export const Busqueda = () => {
                                         alt="Card"
                                     />
                                   </div>
+                                </div>
                                     <p>Juegos 1</p>
                                         <a href="infoJuegos" className="stretched-link"/>
-                                </div>
                             </div>
                             <div className="col">
                                 <div className="card bg-dark text-white">
