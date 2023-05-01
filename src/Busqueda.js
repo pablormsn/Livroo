@@ -159,10 +159,9 @@ export const Busqueda = () => {
                                         src={imagen1}
                                         alt="Card"
                                     />
+                                  </div>
                                     <p>Juegos 1</p>
-
                                         <a href="infoJuegos" className="stretched-link"/>
-                                    </div>
                                 </div>
                             </div>
                             <div className="col">
