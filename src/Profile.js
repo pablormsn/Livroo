@@ -75,7 +75,7 @@ export const Profile = () => {
                         </div>
                         <div className="col-sm-9">
                           <input
-                            className="me-2"
+                            className="form-control me-2"
                             type="text"
                             aria-label="nombre"
                             title="Nombre"
@@ -89,7 +89,7 @@ export const Profile = () => {
                         </div>
                         <div className="col-sm-9">
                           <input
-                            className="me-2"
+                            className="form-control me-2"
                             type="text"
                             aria-label="apellidos"
                             title="Apellidos"
@@ -106,7 +106,7 @@ export const Profile = () => {
                             type="date"
                             onChange={handleChange}
                             ref={dateInputRef}
-                            className="me-2"
+                            className="form-control me-2"
                             title="Fecha de nacimiento"
                           />
                         </div>
@@ -134,7 +134,7 @@ export const Profile = () => {
                         </div>
                         <div className="col-sm-9">
                           <input
-                            className="me-2"
+                            className="form-control me-2"
                             type="email"
                             aria-label="email"
                             title="Correo electrónico"
@@ -148,7 +148,7 @@ export const Profile = () => {
                         </div>
                         <div className="col-sm-9">
                           <input
-                            className="me-2"
+                            className="form-control me-2"
                             type="text"
                             aria-label="usuario"
                             title="Usuario"
@@ -184,7 +184,7 @@ export const Profile = () => {
                         <div className="col-sm-9">
                           <input
                             id="contra"
-                            className="me-2"
+                            className="form-control me-2"
                             type="password"
                             aria-label="contrasena"
                             title="Contraseña"
@@ -199,7 +199,7 @@ export const Profile = () => {
                         <div className="col-sm-9">
                           <input
                             id="contraR"
-                            className="me-2"
+                            className="form-control me-2"
                             type="password"
                             aria-label="ccontrasena"
                             title="Repetir contraseña"
