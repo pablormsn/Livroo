@@ -151,40 +151,45 @@ export const Busqueda = () => {
             <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 d-flex justify-content-center">
               <div className="col">
                 <div className="card bg-dark text-white">
-                  <img
-                    id="Los Juegos Del Hambre"
-                    className="card-img"
-                    src={imagen1}
-                    alt="Card"
-                  />
+
                   <div className="card-img-overlay">
-                    <a href="infoJuegos" className="stretched-link" />
+                    <a href="infoJuegos" className="stretched-link">
+                      <img
+                          id="Los Juegos Del Hambre"
+                          className="card-img"
+                          src={imagen1}
+                          alt="Card"
+                      />
+                    </a>
                   </div>
                 </div>
               </div>
               <div className="col">
                 <div className="card bg-dark text-white">
-                  <img
-                    id="Los Juegos Del Hambre En Llamas"
-                    className="card-img"
-                    src={imagen2}
-                    alt="Card"
-                  />
                   <div className="card-img-overlay">
-                    <a href="infoLlamas" className="stretched-link" />
+                    <a href="infoLlamas" className="stretched-link">
+                      <img
+                          id="Los Juegos Del Hambre En Llamas"
+                          className="card-img"
+                          src={imagen2}
+                          alt="Card"
+                      />
+                    </a>
                   </div>
                 </div>
               </div>
               <div className="col">
                 <div className="card bg-dark text-white">
-                  <img
-                    id="Los Juegos Del Hambre Sinsajo"
-                    className="card-img"
-                    src={imagen3}
-                    alt="Card"
-                  />
+
                   <div className="card-img-overlay">
-                    <a href="infoSinsajo" className="stretched-link" />
+                    <a href="infoSinsajo" className="stretched-link">
+                    <img
+                        id="Los Juegos Del Hambre Sinsajo"
+                        className="card-img"
+                        src={imagen3}
+                        alt="Card"
+                    />
+                    </a>
                   </div>
                 </div>
               </div>
