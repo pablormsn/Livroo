@@ -66,13 +66,6 @@ export const Profile = () => {
                       </button>
                     </div>
                   </div>
-                  <div className="card mb-4">
-                    <div className="card-body">
-                      <a className="link" href="library">
-                        <h5 className="my-3">Mi biblioteca</h5>
-                      </a>
-                    </div>
-                  </div>
                 </div>
                 <div className="col-lg-8 text-center">
                   <div className="card mb-4">
