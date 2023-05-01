@@ -152,15 +152,16 @@ export const Busqueda = () => {
                         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 d-flex justify-content-center">
                             <div className="col">
                                 <div className="card border-0 text-white">
-                                    <img
-                                        id="Los Juegos Del Hambre"
-                                        className="card-img"
-                                        src={imagen1}
-                                        alt="Card"
-                                    />
-                                  <p className="titulos ">Juegos 1</p>
                                   <div className="card-img-overlay">
-                                      <a href="infoJuegos" className="stretched-link"/>
+                                      <a href="infoJuegos" className="stretched-link">
+                                          <img
+                                              id="Los Juegos Del Hambre"
+                                              className="card-img"
+                                              src={imagen1}
+                                              alt="Card"
+                                          />
+                                          <p className="titulos invisible">Juegos 1</p>
+                                      </a>
                                   </div>
                                 </div>
                             </div>
@@ -175,7 +176,7 @@ export const Busqueda = () => {
                                             src={imagen2}
                                             alt="Card"
                                         />
-                                        <p className="titulos ">Juegos 2</p>
+                                        <p className="titulos invisible">Juegos 2</p>
                                         </a>
                                     </div>
                                 </div>
