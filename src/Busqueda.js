@@ -113,7 +113,7 @@ export const Busqueda = () => {
                                         id="imgperfil"
                                         className="nav justify-content-center float-md-end"
                                     >
-                                        <a href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <a href="/Livroo/busqueda" data-bs-toggle="dropdown" aria-expanded="false">
                                             <button
                                                 className="btn me-2 dropdown-toggle"
                                                 type="button"
