@@ -18,6 +18,7 @@ export default function ProfileHeaderbar() {
               to="#"
               className="d-block link-dark text-decoration-none"
               data-bs-toggle="dropdown"
+              aria-haspopup="true"
               aria-expanded="false"
             >
               <Icon.PersonCircle size={38} color="white" />

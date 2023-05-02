@@ -48,7 +48,7 @@ export const Signup = () => {
             <img
               className="mb-4"
               src={logo}
-              alt="logo"
+              aria-label="Inicio"
               width={200}
               height={100}
             />
@@ -70,11 +70,10 @@ export const Signup = () => {
           </div>
           <div className="form-floating">
             <input
-              title="Contraseña"
+              id="floatingPassword"
               type="password"
               className="form-control bg-dark text-white"
-              id="floatingPassword"
-              placeholder="Password"
+              title="Contraseña"
               onKeyDown={() => {
                 log();
               }}
@@ -85,11 +84,10 @@ export const Signup = () => {
           </div>
           <div className="form-floating">
             <input
-              title="Repite la contraseña"
+              id="floatingRPassword"
               type="password"
               className="form-control bg-dark text-white"
-              id="floatingRPassword"
-              placeholder="Repeat password"
+              title="Repita la contraseña"
               onKeyDown={() => {
                 log();
               }}

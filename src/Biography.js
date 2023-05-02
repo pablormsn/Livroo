@@ -18,7 +18,7 @@ export const Biography = () => {
                 <img
                   src={suz}
                   className="img-fluid rounded mx-auto d-block w-75"
-                  alt="..."
+                  aria-label="Fotografía de Suzanne Collins"
                   style={{ marginBottom: 50 }}
                 />
               </div>

@@ -26,7 +26,7 @@ export const Signin = () => {
             <img
               className="mb-4"
               src={logo}
-              alt="logo"
+              aria-label="Inicio"
               width={200}
               height={100}
             />
@@ -34,11 +34,10 @@ export const Signin = () => {
           <h1 className="h3 mb-3 fw-normal text-white">Complete los campos</h1>
           <div className="form-floating">
             <input
-              title="Correo electrónico"
+              id="floatingEmail"
               type="email"
               className="form-control bg-dark text-white"
-              id="floatingEmail"
-              placeholder="name@example.com"
+              title="Correo electrónico"
               onKeyDown={() => {
                 log();
               }}
@@ -49,9 +48,9 @@ export const Signin = () => {
           </div>
           <div className="form-floating">
             <input
+              id="floatingRPassword"
               type="password"
               className="form-control bg-dark text-white"
-              id="floatingRPassword"
               title="Contraseña"
               onKeyDown={() => {
                 log();
@@ -67,8 +66,8 @@ export const Signin = () => {
           <Link to="/home">
             <button
               id="boton"
-              className="w-100 btn btn-lg btn-primary bg-success border-success mt-2"
               type="submit"
+              className="w-100 btn btn-lg btn-primary bg-success border-success mt-2"
               disabled
             >
               Iniciar sesión

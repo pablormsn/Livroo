@@ -1,7 +1,6 @@
 import "./assets/Busqueda.css";
-import ProfileHeaderbar from "./components/SearchHeaderbar";
+import Headerbar from "./components/SearchHeaderbar";
 import Footer from "./components/Footer.js";
-import "./assets/infoLibro.css";
 import imagen1 from "./assets/libro1.jpg";
 import imagen2 from "./assets/libro2.jpg";
 import imagen3 from "./assets/libro3.jpg";
@@ -36,7 +35,7 @@ export const Busqueda = () => {
     return () => {
       ignore = true;
     };
-  }, []);
+  }, [state]);
 
   function search_book(hola) {
     let input = hola;
@@ -79,7 +78,7 @@ export const Busqueda = () => {
 
   return (
     <div className="busqueda-body">
-      <ProfileHeaderbar />
+      <Headerbar />
       <div
         className="d-flex h-100 p-3 mx-auto flex-column justify-content-center"
         style={{ marginTop: 20 }}
@@ -90,27 +89,30 @@ export const Busqueda = () => {
           </div>
           <div id="barra-busqueda" className="container p-3">
             <div className="barra card">
-              <div className="card-body d-flex justify-content-between align-items-center border-success">
-                <input
-                  id="message"
-                  className="form-control"
-                  type="search"
-                  placeholder="Buscar"
-                  onChange={handleChange}
-                  onKeyDown={handleKeyDown}
-                  value={message}
-                  aria-label="Buscar"
-                  title="Buscar"
-                />
-                <div className="card-body d-flex justify-content-between align-items-center">
-                  <Link
+              <div className="d-flex align-items-lg-center justify-content-center">
+                <div className="input-group">
+                  <input
+                    id="message"
+                    type="search"
+                    className="form-control"
+                    placeholder="Buscar..."
+                    onChange={handleChange}
+                    onKeyDown={handleKeyDown}
+                    value={message}
+                    title="Buscar"
+                  />
+                  <button
                     onClick={handleClick}
-                    className="btn btn-outline-success"
+                    className="btn btn-success"
                     type="submit"
                     aria-label="Buscar"
                   >
-                    Buscar
-                  </Link>
+                    <span className="d-flex align-items-center justify-content-center">
+                      <Icon.Search />
+                    </span>
+                  </button>
+                </div>
+                <div className="card-body d-flex justify-content-between align-items-center">
                   <nav
                     id="imgperfil"
                     className="nav justify-content-center float-md-end"
@@ -127,6 +129,7 @@ export const Busqueda = () => {
                         data-toggle="dropdown"
                         aria-haspopup="true"
                         aria-expanded="false"
+                        aria-label="Filtrar"
                       >
                         <Icon.Filter size={24} className="text-success" />
                       </button>
@@ -161,7 +164,7 @@ export const Busqueda = () => {
                   <div className="card-img-overlay">
                     <Link to="/infoJuegos" className="stretched-link">
                       <img
-                        id="Los Juegos Del Hambre"
+                        id="Los Juegos del Hambre"
                         className="card-img"
                         src={imagen1}
                         aria-label="Los Juegos del Hambre"
@@ -176,7 +179,7 @@ export const Busqueda = () => {
                   <div className="card-img-overlay">
                     <Link to="/infoLlamas" className="stretched-link">
                       <img
-                        id="Los Juegos Del Hambre En Llamas"
+                        id="Los Juegos del Hambre En Llamas"
                         className="card-img"
                         src={imagen2}
                         aria-label="Los Juegos del Hambre: En Llamas"
@@ -191,7 +194,7 @@ export const Busqueda = () => {
                   <div className="card-img-overlay">
                     <Link to="/infoSinsajo" className="stretched-link">
                       <img
-                        id="Los Juegos Del Hambre Sinsajo"
+                        id="Los Juegos del Hambre Sinsajo"
                         className="card-img"
                         src={imagen3}
                         aria-label="Los Juegos del Hambre: Sinsajo"

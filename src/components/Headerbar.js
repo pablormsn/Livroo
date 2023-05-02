@@ -56,11 +56,12 @@ export default function Headerbar() {
                   onKeyDown={handleKeyDown}
                   value={message}
                   title="Buscar"
-                />{" "}
+                />
                 <button
                   className="btn btn-outline-success"
                   type="submit"
                   onClick={handleClick}
+                  aria-label="Buscar"
                 >
                   <span className="d-flex align-items-center justify-content-center">
                     <Icon.Search />
@@ -73,6 +74,7 @@ export default function Headerbar() {
                 to="#"
                 className="d-block link-dark text-decoration-none"
                 data-bs-toggle="dropdown"
+                aria-haspopup="true"
                 aria-expanded="false"
               >
                 <Icon.PersonCircle size={38} />
