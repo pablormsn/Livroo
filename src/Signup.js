@@ -56,11 +56,10 @@ export const Signup = () => {
           <h1 className="h3 mb-3 fw-normal text-white">Complete los campos</h1>
           <div className="form-floating">
             <input
-              title="Correo electrónico"
               type="email"
               className="form-control bg-dark text-white"
               id="floatingEmail"
-              placeholder="name@example.com"
+              title="Correo electrónico"
               onKeyDown={() => {
                 log();
               }}

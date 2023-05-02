@@ -49,11 +49,10 @@ export const Signin = () => {
           </div>
           <div className="form-floating">
             <input
-              title="Contraseña"
               type="password"
               className="form-control bg-dark text-white"
               id="floatingRPassword"
-              placeholder="Password"
+              title="Contraseña"
               onKeyDown={() => {
                 log();
               }}

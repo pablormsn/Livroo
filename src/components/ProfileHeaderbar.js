@@ -23,8 +23,8 @@ export default function ProfileHeaderbar() {
                 src={user}
                 aria-label="Opciones"
                 className="rounded-circle"
-                width={32}
-                height={32}
+                width={38}
+                height={38}
               />
             </Link>
             <ul className="dropdown-menu text-small">
