@@ -9,6 +9,7 @@ import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import * as Icon from "react-bootstrap-icons";
+import { Link } from "react-router-dom";
 
 export const Busqueda = () => {
   const { state } = useLocation();
@@ -102,20 +103,20 @@ export const Busqueda = () => {
                   title="Buscar"
                 />
                 <div className="card-body d-flex justify-content-between align-items-center">
-                  <a
+                  <Link
                     onClick={handleClick}
                     className="btn btn-outline-success"
                     type="submit"
                     aria-label="Buscar"
                   >
                     Buscar
-                  </a>
+                  </Link>
                   <nav
                     id="imgperfil"
                     className="nav justify-content-center float-md-end"
                   >
-                    <a
-                      href="./busqueda"
+                    <Link
+                      to="/busqueda"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
@@ -129,22 +130,22 @@ export const Busqueda = () => {
                       >
                         <Icon.Filter size={24} className="text-success" />
                       </button>
-                    </a>
+                    </Link>
                     <ul className="dropdown-menu dropdown-menu-end">
                       <li>
-                        <a className="dropdown-item" href="./busqueda">
+                        <Link className="dropdown-item" to="/busqueda">
                           {" "}
                           menos &lt; más (páginas){" "}
-                        </a>
+                        </Link>
                       </li>
                       <li>
                         <hr className="dropdown-divider" />
                       </li>
                       <li>
-                        <a className="dropdown-item" href="./busqueda">
+                        <Link className="dropdown-item" to="/busqueda">
                           {" "}
                           más &gt; menos (páginas)
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </nav>
@@ -158,7 +159,7 @@ export const Busqueda = () => {
               <div className="col">
                 <div className="card border-0 text-white">
                   <div className="card-img-overlay">
-                    <a href="./infoJuegos" className="stretched-link">
+                    <Link to="/infoJuegos" className="stretched-link">
                       <img
                         id="Los Juegos Del Hambre"
                         className="card-img"
@@ -166,14 +167,14 @@ export const Busqueda = () => {
                         aria-label="Los Juegos del Hambre"
                       />
                       <p className="titulos invisible">Juegos 1</p>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
               <div className="col">
                 <div className="card border-0 text-white">
                   <div className="card-img-overlay">
-                    <a href="./infoLlamas" className="stretched-link">
+                    <Link to="/infoLlamas" className="stretched-link">
                       <img
                         id="Los Juegos Del Hambre En Llamas"
                         className="card-img"
@@ -181,14 +182,14 @@ export const Busqueda = () => {
                         aria-label="Los Juegos del Hambre: En Llamas"
                       />
                       <p className="titulos invisible">Juegos 2</p>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
               <div className="col">
                 <div className="card border-0 text-white">
                   <div className="card-img-overlay">
-                    <a href="./infoSinsajo" className="stretched-link">
+                    <Link to="/infoSinsajo" className="stretched-link">
                       <img
                         id="Los Juegos Del Hambre Sinsajo"
                         className="card-img"
@@ -196,7 +197,7 @@ export const Busqueda = () => {
                         aria-label="Los Juegos del Hambre: Sinsajo"
                       />
                       <p className="titulos invisible">Juegos 3</p>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

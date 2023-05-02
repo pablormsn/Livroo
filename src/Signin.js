@@ -2,6 +2,7 @@ import React from "react";
 import "./assets/Signin.css";
 import logo from "./assets/Livroo.png";
 import Footer from "./components/Footer";
+import { Link } from "react-router-dom";
 
 export const Signin = () => {
   function log() {
@@ -21,7 +22,7 @@ export const Signin = () => {
           method="get"
           className="container bg-dark p-3 rounded-5 bg-opacity-75"
         >
-          <a href="./">
+          <Link to="/">
             <img
               className="mb-4"
               src={logo}
@@ -29,7 +30,7 @@ export const Signin = () => {
               width={200}
               height={100}
             />
-          </a>
+          </Link>
           <h1 className="h3 mb-3 fw-normal text-white">Complete los campos</h1>
           <div className="form-floating">
             <input
@@ -61,17 +62,19 @@ export const Signin = () => {
               Contraseña
             </label>
           </div>
-          <a href="./signup" className="text-success">
+          <Link to="/signup" className="text-success">
             ¿Aún no tienes cuenta? Regístrate
-          </a>
-          <button
-            id="boton"
-            className="w-100 btn btn-lg btn-primary bg-success border-success mt-2"
-            type="submit"
-            disabled
-          >
-            Iniciar sesión
-          </button>
+          </Link>
+          <Link to="/home">
+            <button
+              id="boton"
+              className="w-100 btn btn-lg btn-primary bg-success border-success mt-2"
+              type="submit"
+              disabled
+            >
+              Iniciar sesión
+            </button>
+          </Link>
         </form>
         <Footer />
       </main>

@@ -1,6 +1,7 @@
 import logo from "./assets/Livroo.png";
 import "./assets/Welcome.css";
 import Footer from "./components/Footer";
+import { Link } from "react-router-dom";
 
 function Welcome() {
   return (
@@ -8,7 +9,7 @@ function Welcome() {
       <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <header className="mb-5">
           <div>
-            <a href="./">
+            <Link to="/">
               <img
                 src={logo}
                 width={100}
@@ -16,11 +17,11 @@ function Welcome() {
                 aria-label="Inicio"
                 aria-current="page"
               />
-            </a>
+            </Link>
             <nav className="nav nav-masthead justify-content-center float-md-end">
-              <a className="nav-link fw-bold py-1 px-0" href="./signin">
+              <Link to="/signin" className="nav-link fw-bold py-1 px-0">
                 Iniciar sesión
-              </a>
+              </Link>
             </nav>
           </div>
         </header>
@@ -31,12 +32,12 @@ function Welcome() {
             de una amplia variedad de libros en cualquier momento y lugar.
           </p>
           <p className="lead">
-            <a
-              href="./signup"
+            <Link
+              to="/signup"
               className="btn btn-lg btn-secondary fw-bold border-white bg-white"
             >
               Registrarse
-            </a>
+            </Link>
           </p>
         </main>
         <Footer />

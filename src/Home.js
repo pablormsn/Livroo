@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Headerbar from "./components/Headerbar";
 import Footer from "./components/Footer";
 import "./assets/Home.css";
@@ -39,8 +40,12 @@ export const Home = () => {
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <a href="./infoJuegos">
-                <img src={carousel1} alt="Libro 1" className="paco" />
+              <Link to="/infoJuegos">
+                <img
+                  src={carousel1}
+                  aria-label="Portada del libro Los Juegos del Hambre"
+                  className="paco"
+                />
                 <div className="container">
                   <div
                     class="carousel-caption text-center text-dark bg-light p-2 rounded-3 bg-opacity-75"
@@ -49,11 +54,15 @@ export const Home = () => {
                     <h1>Los Juegos del Hambre</h1>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="carousel-item">
-              <a href="./infoLlamas">
-                <img src={carousel2} alt="Libro 2" className="paco" />
+              <Link to="/infoLlamas">
+                <img
+                  src={carousel2}
+                  aria-label="Portada del libro Los Juegos del Hambre: En Llamas"
+                  className="paco"
+                />
                 <div className="container">
                   <div
                     class="carousel-caption text-center text-dark bg-light p-2 rounded-3 bg-opacity-75"
@@ -62,11 +71,15 @@ export const Home = () => {
                     <h1>Los Juegos del Hambre: En Llamas</h1>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
             <div className="carousel-item">
-              <a href="./infoSinsajo">
-                <img src={carousel3} alt="Libro 3" className="paco" />
+              <Link to="/infoSinsajo">
+                <img
+                  src={carousel3}
+                  aria-label="Portada del libro Los Juegos del Hambre: Sinsajo"
+                  className="paco"
+                />
                 <div className="container">
                   <div
                     class="carousel-caption text-center text-dark bg-light p-2 rounded-3 bg-opacity-75"
@@ -75,7 +88,7 @@ export const Home = () => {
                     <h1>Los Juegos del Hambre: Sinsajo</h1>
                   </div>
                 </div>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -84,68 +97,68 @@ export const Home = () => {
           <div className="row row-cols-2 row-cols-sm-3 row-cols-md-6 g-3">
             <div className="col">
               <div className="card">
-                <a href="./infoJuegos">
+                <Link to="/infoJuegos">
                   <img
                     src={libro1}
                     className="d-block w-100 card-img-top zoom"
                     aria-label="Los juegos del hambre"
                   />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col">
               <div className="card">
-                <a href="./infoLlamas">
+                <Link to="/infoLlamas">
                   <img
                     src={libro2}
                     className="d-block w-100 card-img-top zoom"
                     aria-label="Los juegos del hambre: En Llamas"
                   />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col">
               <div className="card">
-                <a href="./infoSinsajo">
+                <Link to="/infoSinsajo">
                   <img
                     src={libro3}
                     className="d-block w-100 card-img-top zoom"
                     aria-label="Los Juegos del Hambre: Sinsajo"
                   />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col">
               <div className="card">
-                <a href="./infoJuegos">
+                <Link to="/infoJuegos">
                   <img
                     src={libro1}
                     className="d-block w-100 card-img-top zoom"
                     aria-label="Los juegos del hambre"
                   />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col">
               <div className="card">
-                <a href="./infoLlamas">
+                <Link to="/infoLlamas">
                   <img
                     src={libro2}
                     className="d-block w-100 card-img-top zoom"
                     aria-label="Los juegos del hambre: En Llamas"
                   />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col">
               <div className="card">
-                <a href="./infoSinsajo">
+                <Link to="/infoSinsajo">
                   <img
                     src={libro3}
                     className="d-block w-100 card-img-top zoom"
                     aria-label="Los Juegos del Hambre: Sinsajo"
                   />
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -153,68 +166,68 @@ export const Home = () => {
           <div className="row row-cols-2 row-cols-sm-3 row-cols-md-6 g-3">
             <div className="col">
               <div className="card">
-                <a href="./infoJuegos">
+                <Link to="/infoJuegos">
                   <img
                     src={libro1}
                     className="d-block w-100 card-img-top zoom"
                     aria-label="Los juegos del hambre"
                   />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col">
               <div className="card">
-                <a href="./infoLlamas">
+                <Link to="/infoLlamas">
                   <img
                     src={libro2}
                     className="d-block w-100 card-img-top zoom"
                     aria-label="Los juegos del hambre: En Llamas"
                   />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col">
               <div className="card">
-                <a href="./infoSinsajo">
+                <Link to="/infoSinsajo">
                   <img
                     src={libro3}
                     className="d-block w-100 card-img-top zoom"
                     aria-label="Los Juegos del Hambre: Sinsajo"
                   />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col">
               <div className="card">
-                <a href="./infoJuegos">
+                <Link to="/infoJuegos">
                   <img
                     src={libro1}
                     className="d-block w-100 card-img-top zoom"
                     aria-label="Los juegos del hambre"
                   />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col">
               <div className="card">
-                <a href="./infoLlamas">
+                <Link to="/infoLlamas">
                   <img
                     src={libro2}
                     className="d-block w-100 card-img-top zoom"
                     aria-label="Los juegos del hambre: En Llamas"
                   />
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col">
               <div className="card">
-                <a href="./infoSinsajo">
+                <Link to="/infoSinsajo">
                   <img
                     src={libro3}
                     className="d-block w-100 card-img-top zoom"
                     aria-label="Los Juegos del Hambre: Sinsajo"
                   />
-                </a>
+                </Link>
               </div>
             </div>
           </div>

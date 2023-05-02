@@ -4,6 +4,7 @@ import Headerbar from "./components/Headerbar.js";
 import port from "./assets/libro1.jpg";
 import libro from "./assets/juegos1.pdf";
 import ProgressBar from "react-bootstrap/ProgressBar";
+import { Link } from "react-router-dom";
 
 export const InfoJuegos = () => {
   return (
@@ -12,9 +13,9 @@ export const InfoJuegos = () => {
       <div className="infoLibro-body">
         <div className="container">
           <p style={{ fontSize: "large" }}>
-            <a className="link" href="./home">
+            <Link to="/home" className="link">
               Libros
-            </a>{" "}
+            </Link>{" "}
             &gt; Los Juegos Del Hambre
           </p>
         </div>
@@ -85,17 +86,16 @@ export const InfoJuegos = () => {
                 <h2 className="featurette-heading fw-normal lh-1">
                   Los Juegos del Hambre{" "}
                 </h2>
-                <h4>
-                  <a>Suzanne Collins</a>
-                  <a> </a>
-                  <a className="link" href="./biography">
+                <div style={{ display: "flex", alignItems: "center" }}>
+                  <h3 style={{ marginRight: 10 }}>Suzanne Collins</h3>
+                  <Link to="/biography" className="link">
                     <i>
                       <span className="fs-6" aria-label="Saber más del autor">
                         (Saber más)
                       </span>
                     </i>
-                  </a>
-                </h4>
+                  </Link>
+                </div>
                 <h5>Sinopsis:</h5>
                 <p>
                   "En una oscura versión del futuro próximo, doce chicos y doce

@@ -4,6 +4,7 @@ import user from "../assets/user.png";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import lupa from "../assets/search.png";
+import { Link } from "react-router-dom";
 
 export default function Headerbar() {
   const [message, setMessage] = useState("");
@@ -36,9 +37,9 @@ export default function Headerbar() {
     <header className="p-3 border-bottom">
       <div className="container-fluid">
         <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a href="./home" className="navbar-brand">
+          <Link to="/home" className="navbar-brand">
             <img src={logo} aria-label="Inicio" width={64} height={32} />
-          </a>
+          </Link>
           <div className="nav col-12 col-lg-auto me-lg-auto mb-2 mb-md-0" />
           <form className="col col-lg-auto mb-3 mb-lg-0 me-lg-1" role="search">
             <div className="input-group">
@@ -63,8 +64,8 @@ export default function Headerbar() {
             </div>
           </form>
           <div className="dropdown text-end">
-            <a
-              href="#"
+            <Link
+              to="#"
               className="d-block link-dark text-decoration-none"
               data-bs-toggle="dropdown"
               aria-expanded="false"
@@ -76,20 +77,20 @@ export default function Headerbar() {
                 width={32}
                 height={32}
               />
-            </a>
+            </Link>
             <ul className="dropdown-menu text-small">
               <li>
-                <a className="dropdown-item" href="./profile">
+                <Link to="/profile" className="dropdown-item">
                   Perfil
-                </a>
+                </Link>
               </li>
               <li>
                 <hr className="dropdown-divider" />
               </li>
               <li>
-                <a className="dropdown-item" href="./">
+                <Link to="/" className="dropdown-item">
                   Cerrar sesión
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

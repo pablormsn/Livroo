@@ -4,6 +4,7 @@ import Headerbar from "./components/Headerbar.js";
 import port from "./assets/libro2.jpg";
 import libro from "./assets/juegos2.pdf";
 import ProgressBar from "react-bootstrap/ProgressBar";
+import { Link } from "react-router-dom";
 
 export const InfoLlamas = () => {
   return (
@@ -12,9 +13,9 @@ export const InfoLlamas = () => {
       <div className="infoLibro-body">
         <div className="container">
           <p style={{ fontSize: "large" }}>
-            <a className="link" href="./home">
+            <Link to="/home" className="link">
               Libros
-            </a>{" "}
+            </Link>{" "}
             &gt; Los Juegos Del Hambre: En Llamas
           </p>
         </div>
@@ -85,17 +86,16 @@ export const InfoLlamas = () => {
                 <h2 className="fw-normal lh-1">
                   Los Juegos del Hambre: En Llamas{" "}
                 </h2>
-                <h4>
-                  <a>Suzanne Collins</a>
-                  <a> </a>
-                  <a className="link" href="./biography">
+                <div style={{ display: "flex", alignItems: "center" }}>
+                  <h3 style={{ marginRight: 10 }}>Suzanne Collins</h3>
+                  <Link to="/biography" className="link">
                     <i>
                       <span className="fs-6" aria-label="Saber más del autor">
                         (Saber más)
                       </span>
                     </i>
-                  </a>
-                </h4>
+                  </Link>
+                </div>
                 <h5>Sinopsis:</h5>
                 <p>
                   "Los Juegos del Hambre: En Llamas" es la segunda entrega de la
