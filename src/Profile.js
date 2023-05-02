@@ -2,13 +2,13 @@ import React from "react";
 import "./assets/Profile.css";
 import Headerbar from "./components/ProfileHeaderbar";
 import Footer from "./components/Footer";
-import user from "./assets/user.png";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
 import { useRef, useState } from "react";
 import { useMemo } from "react";
 import Select from "react-select";
 import countryList from "react-select-country-list";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 export const Profile = () => {
   function texto() {
@@ -49,11 +49,9 @@ export const Profile = () => {
                 <div className="col-lg-4">
                   <div className="card mb-4">
                     <div className="card-body text-center">
-                      <img
-                        src={user}
-                        alt="avatar"
-                        className="rounded-circle img-fluid"
-                        style={{ width: 150 }}
+                      <i
+                        className="bi bi-person-circle"
+                        style={{ fontSize: "150px" }}
                       />
                       <h5 className="my-3">Nombre</h5>
                     </div>

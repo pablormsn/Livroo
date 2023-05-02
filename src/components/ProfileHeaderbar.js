@@ -1,7 +1,7 @@
 import "../assets/Headerbar.css";
 import logo from "../assets/Livroo.png";
-import user from "../assets/user.png";
 import { Link } from "react-router-dom";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 export default function ProfileHeaderbar() {
   return (
@@ -19,13 +19,7 @@ export default function ProfileHeaderbar() {
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <img
-                src={user}
-                aria-label="Opciones"
-                className="rounded-circle"
-                width={38}
-                height={38}
-              />
+              <i className="bi bi-person-circle" style={{ fontSize: "29px" }} />
             </Link>
             <ul className="dropdown-menu text-small">
               <li>

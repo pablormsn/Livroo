@@ -1,10 +1,9 @@
 import "../assets/Headerbar.css";
 import logo from "../assets/Livroo.png";
-import user from "../assets/user.png";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import lupa from "../assets/search.png";
 import { Link } from "react-router-dom";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 export default function Headerbar() {
   const [message, setMessage] = useState("");
@@ -41,7 +40,7 @@ export default function Headerbar() {
             <img src={logo} aria-label="Inicio" width={64} height={32} />
           </Link>
           <div className="nav col-12 col-lg-auto me-lg-auto mb-2 mb-md-0" />
-          <div style={{ display: "flex", flexDirection: "row" }}>
+          <div className="d-flex align-items-lg-center justify-content-center">
             <form
               className="col col-lg-auto mb-3 mb-lg-0 me-lg-1"
               role="search"
@@ -63,23 +62,20 @@ export default function Headerbar() {
                   type="submit"
                   onClick={handleClick}
                 >
-                  <img src={lupa} aria-label="Buscar" width={16} height={16} />
+                  <i className="bi bi-search" />
                 </button>
               </div>
             </form>
-            <div className="dropdown text-end" style={{ marginLeft: 6 }}>
+            <div className="dropdown" style={{ marginLeft: 6 }}>
               <Link
                 to="#"
                 className="d-block link-dark text-decoration-none"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <img
-                  src={user}
-                  aria-label="Opciones"
-                  className="rounded-circle"
-                  width={38}
-                  height={38}
+                <i
+                  className="bi bi-person-circle"
+                  style={{ fontSize: "29px" }}
                 />
               </Link>
               <ul className="dropdown-menu text-small">
