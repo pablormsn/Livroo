@@ -20,7 +20,7 @@ export default function ProfileHeaderbar() {
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              <Icon.PersonCircle size={38} />
+              <Icon.PersonCircle size={38} color="white" />
             </Link>
             <ul className="dropdown-menu text-small">
               <li>

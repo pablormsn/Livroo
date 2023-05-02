@@ -3,7 +3,7 @@ import logo from "../assets/Livroo.png";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import "bootstrap-icons/font/bootstrap-icons.css";
+import * as Icon from "react-bootstrap-icons";
 
 export default function Headerbar() {
   const [message, setMessage] = useState("");
@@ -62,7 +62,9 @@ export default function Headerbar() {
                   type="submit"
                   onClick={handleClick}
                 >
-                  <i className="bi bi-search" />
+                  <span className="d-flex align-items-center justify-content-center">
+                    <Icon.Search />
+                  </span>
                 </button>
               </div>
             </form>
@@ -73,10 +75,7 @@ export default function Headerbar() {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <i
-                  className="bi bi-person-circle"
-                  style={{ fontSize: "29px" }}
-                />
+                <Icon.PersonCircle size={38} />
               </Link>
               <ul className="dropdown-menu text-small">
                 <li>

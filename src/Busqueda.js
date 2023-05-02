@@ -1,5 +1,5 @@
 import "./assets/Busqueda.css";
-import ProfileHeaderbar from "./components/ProfileHeaderbar";
+import ProfileHeaderbar from "./components/SearchHeaderbar";
 import Footer from "./components/Footer.js";
 import "./assets/infoLibro.css";
 import imagen1 from "./assets/libro1.jpg";

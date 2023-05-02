@@ -8,7 +8,7 @@ import { useRef, useState } from "react";
 import { useMemo } from "react";
 import Select from "react-select";
 import countryList from "react-select-country-list";
-import "bootstrap-icons/font/bootstrap-icons.css";
+import * as Icon from "react-bootstrap-icons";
 
 export const Profile = () => {
   function texto() {
@@ -49,10 +49,7 @@ export const Profile = () => {
                 <div className="col-lg-4">
                   <div className="card mb-4">
                     <div className="card-body text-center">
-                      <i
-                        className="bi bi-person-circle"
-                        style={{ fontSize: "150px" }}
-                      />
+                      <Icon.PersonCircle size={150} />
                       <h5 className="my-3">Nombre</h5>
                     </div>
                     <div className="d-flex justify-content-center mb-2">
