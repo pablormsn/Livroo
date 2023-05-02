@@ -22,19 +22,19 @@ export const Home = () => {
               data-bs-slide-to={0}
               className="active"
               aria-current="true"
-              aria-label="Slide 1"
+              aria-label="Cambiar al primer libro"
             />
             <button
               type="button"
               data-bs-target="#myCarousel"
               data-bs-slide-to={1}
-              aria-label="Slide 2"
+              aria-label="Cambiar al segundo libro"
             />
             <button
               type="button"
               data-bs-target="#myCarousel"
               data-bs-slide-to={2}
-              aria-label="Slide 3"
+              aria-label="Cambiar al tercer libro"
             />
           </div>
           <div className="carousel-inner">

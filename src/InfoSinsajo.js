@@ -90,7 +90,9 @@ export const InfoSinsajo = () => {
                   <a> </a>
                   <a className="link" href="./biography">
                     <i>
-                      <span className="fs-6">(Saber más)</span>
+                      <span className="fs-6" aria-label="Saber más del autor">
+                        (Saber más)
+                      </span>
                     </i>
                   </a>
                 </h4>

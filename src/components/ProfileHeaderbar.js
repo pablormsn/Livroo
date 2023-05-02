@@ -20,7 +20,7 @@ export default function ProfileHeaderbar() {
             >
               <img
                 src={user}
-                alt="User"
+                aria-label="Opciones"
                 className="rounded-circle"
                 width={32}
                 height={32}

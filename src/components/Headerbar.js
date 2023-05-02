@@ -58,7 +58,7 @@ export default function Headerbar() {
                 type="submit"
                 onClick={handleClick}
               >
-                <img src={lupa} alt="lupa" width={16} height={16} />
+                <img src={lupa} aria-label="Buscar" width={16} height={16} />
               </button>
             </div>
           </form>
@@ -71,7 +71,7 @@ export default function Headerbar() {
             >
               <img
                 src={user}
-                alt="User"
+                aria-label="Opciones"
                 className="rounded-circle"
                 width={32}
                 height={32}

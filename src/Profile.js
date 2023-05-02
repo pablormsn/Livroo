@@ -61,6 +61,7 @@ export const Profile = () => {
                       <button
                         type="button"
                         className="btn btn-primary bg-success border-success"
+                        aria-label="Cambiar imagen de perfil"
                       >
                         Cambiar imagen
                       </button>
@@ -167,6 +168,7 @@ export const Profile = () => {
                           <button
                             type="button"
                             className="btn btn-primary bg-success border-success"
+                            aria-label="Guardar cambios realizados"
                           >
                             {" "}
                             Guardar{" "}
@@ -174,7 +176,12 @@ export const Profile = () => {
                         }
                         position="top center"
                       >
-                        <div className="text-center">¡Guardado!</div>
+                        <div
+                          className="text-center"
+                          aria-label="Guardado con éxito"
+                        >
+                          ¡Guardado!
+                        </div>
                       </Popup>
                     </div>
                   </div>
@@ -218,6 +225,7 @@ export const Profile = () => {
                         <button
                           type="button"
                           className="btn btn-primary bg-success border-success"
+                          aria-label="Cambiar contraseña"
                         >
                           {" "}
                           Cambiar contraseña{" "}

@@ -106,6 +106,7 @@ export const Busqueda = () => {
                     onClick={handleClick}
                     className="btn btn-outline-success"
                     type="submit"
+                    aria-label="Buscar"
                   >
                     Buscar
                   </a>
@@ -162,7 +163,7 @@ export const Busqueda = () => {
                         id="Los Juegos Del Hambre"
                         className="card-img"
                         src={imagen1}
-                        alt="Card"
+                        aria-label="Los Juegos del Hambre"
                       />
                       <p className="titulos invisible">Juegos 1</p>
                     </a>
@@ -177,7 +178,7 @@ export const Busqueda = () => {
                         id="Los Juegos Del Hambre En Llamas"
                         className="card-img"
                         src={imagen2}
-                        alt="Card"
+                        aria-label="Los Juegos del Hambre: En Llamas"
                       />
                       <p className="titulos invisible">Juegos 2</p>
                     </a>
@@ -192,7 +193,7 @@ export const Busqueda = () => {
                         id="Los Juegos Del Hambre Sinsajo"
                         className="card-img"
                         src={imagen3}
-                        alt="Card"
+                        aria-label="Los Juegos del Hambre: Sinsajo"
                       />
                       <p className="titulos invisible">Juegos 3</p>
                     </a>
