@@ -69,7 +69,7 @@ export const InfoSinsajo = () => {
                         <div className="modal-body">
                           <embed
                             src={libro}
-                            width={1100}
+                            width="100%"
                             height={800}
                             type="application/pdf"
                           />
