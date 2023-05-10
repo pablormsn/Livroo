@@ -77,7 +77,7 @@ export default function Headerbar() {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <Icon.PersonCircle size={38} />
+                <Icon.PersonCircle size={38} aria-label="Usuario" />
               </Link>
               <ul className="dropdown-menu text-small">
                 <li>
