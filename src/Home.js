@@ -44,7 +44,7 @@ export const Home = () => {
                 <img
                   src={carousel1}
                   aria-label="Portada del libro Los Juegos del Hambre"
-                  className="paco"
+                  className="center-fit"
                 />
                 <div className="container">
                   <div
@@ -61,7 +61,7 @@ export const Home = () => {
                 <img
                   src={carousel2}
                   aria-label="Portada del libro Los Juegos del Hambre: En Llamas"
-                  className="paco"
+                  className="center-fit"
                 />
                 <div className="container">
                   <div
@@ -78,7 +78,7 @@ export const Home = () => {
                 <img
                   src={carousel3}
                   aria-label="Portada del libro Los Juegos del Hambre: Sinsajo"
-                  className="paco"
+                  className="center-fit"
                 />
                 <div className="container">
                   <div

@@ -1,8 +1,9 @@
-.paco {
-  background-size: cover;
-  width: 100%;
-  height: auto;
+.center-fit {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
 }
+
 .carousel {
   margin-bottom: 4rem;
 }
