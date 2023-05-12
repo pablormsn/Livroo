@@ -99,7 +99,6 @@ export const Signup = () => {
           <Link to="/signin" className="text-success">
             ¿Ya tienes una cuenta? Inicia sesión
           </Link>
-          <Link to="/home">
             <button
               id="boton"
               className="w-100 btn btn-lg btn-primary bg-success border-success mt-2"
@@ -108,7 +107,6 @@ export const Signup = () => {
             >
               Registrarse
             </button>
-          </Link>
         </form>
         <Footer />
       </main>

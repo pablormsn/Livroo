@@ -63,7 +63,6 @@ export const Signin = () => {
           <Link to="/signup" className="text-success">
             ¿Aún no tienes cuenta? Regístrate
           </Link>
-          <Link to="/home">
             <button
               id="boton"
               type="submit"
@@ -72,7 +71,6 @@ export const Signin = () => {
             >
               Iniciar sesión
             </button>
-          </Link>
         </form>
         <Footer />
       </main>
