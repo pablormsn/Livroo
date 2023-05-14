@@ -14,3 +14,5 @@ git clone https://github.com/TIRUMA33/Livroo.git
 npm i react-scripts
 npm start
 ```
+
+Al ejecutar `npm start` es necesario eliminar `Livroo` después de `/` en la URL.

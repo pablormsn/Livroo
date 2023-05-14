@@ -24,7 +24,7 @@ export const Profile = () => {
     }
   }
 
-  const [setDate] = useState("");
+  const [date, setDate] = useState("");
   const dateInputRef = useRef(null);
 
   const handleChange = (e) => {
