@@ -1,7 +1,8 @@
 <div align="center">
 <img src="LIVROO/logo_dark_green_black.png" width="200" alt="Livroo"/>
-# Livroo 📚
 </div>
+
+# Livroo 📚
 
 Livroo is a frontend application designed for book lovers to explore, track, and manage their reading journey. Discover new books, keep track of your reading progress, and organize your personal library with ease.
 
